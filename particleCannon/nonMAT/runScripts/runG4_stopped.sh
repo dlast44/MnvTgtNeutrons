@@ -1,0 +1,9 @@
+#!/bin/bash
+
+./G4_stopped /minerva/data/users/dlast/merged_PC_files/Pre_MAD_Broken_Neutrons/GEANTINFO_Run_126000_Target5_PiMinusPlusMuon_PDG_-211_Ek_lo_0.0_Ek_hi_5000.0_nFiles_416.root Pre_MAD_Broken_Neutrons/Run_126000_Target5_PiMinusPlusMuon_PDG_-211_Ek_lo_0.0_Ek_hi_5000.0 -211 > pim_g4_stopped_latest.txt &
+
+./G4_stopped /minerva/data/users/dlast/merged_PC_files/Pre_MAD_Broken_Neutrons/GEANTINFO_Run_126000_Target5_PiPlusPlusMuon_PDG_211_Ek_lo_0.0_Ek_hi_5000.0_nFiles_417.root Pre_MAD_Broken_Neutrons/Run_126000_Target5_PiPlusPlusMuon_PDG_211_Ek_lo_0.0_Ek_hi_5000.0 211 > pip_g4_stopped_latest.txt &
+
+./G4_stopped /minerva/data/users/dlast/merged_PC_files/Pre_MAD_Broken_Neutrons/GEANTINFO_Run_126000_Target5_NeutronPlusMuon_PDG_2112_Ek_lo_0.0_Ek_hi_5000.0_nFiles_429.root Pre_MAD_Broken_Neutrons/Run_126000_Target5_NeutronPlusMuon_PDG_2112_Ek_lo_0.0_Ek_hi_5000.0 2112 > neutron_g4_stopped_latest.txt &
+
+./G4_stopped /minerva/data/users/dlast/merged_PC_files/Pre_MAD_Broken_Neutrons/GEANTINFO_Run_126000_Target5_Pi0PlusMuon_PDG_111_Ek_lo_0.0_Ek_hi_5000.0_nFiles_413.root Pre_MAD_Broken_Neutrons/Run_126000_Target5_Pi0PlusMuon_PDG_111_Ek_lo_0.0_Ek_hi_5000.0 111 > pi0_g4_stopped_latest.txt &

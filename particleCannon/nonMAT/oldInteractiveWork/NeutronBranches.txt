@@ -1,0 +1,785 @@
+******************************************************************************
+*Tree    :CCQENu    : Tuple created by an AnaTuple managed by AnaTupleManager *
+*Entries :   240373 : Total =     12832325911 bytes  File  Size = 4879225276 *
+*        :          : Tree compression factor =   2.63                       *
+******************************************************************************
+*Br    0 :CCQENu_Blob2DMuonDRho_order_sz : CCQENu_Blob2DMuonDRho_order_sz/I  *
+*Entries :   240373 : Total  Size=    1017578 bytes  File Size  =     352518 *
+*Baskets :      468 : Basket Size=      65535 bytes  Compression=   2.86     *
+*............................................................................*
+*Br    1 :CCQENu_Blob2DMuonDRho_order :                                      *
+*         | CCQENu_Blob2DMuonDRho_order[CCQENu_Blob2DMuonDRho_order_sz]/I    *
+*Entries :   240373 : Total  Size=   11418178 bytes  File Size  =    3051355 *
+*Baskets :      468 : Basket Size=      65535 bytes  Compression=   3.74     *
+*............................................................................*
+*Br    2 :CCQENu_Blob2DMuonDTheta_order_sz :                                 *
+*         | CCQENu_Blob2DMuonDTheta_order_sz/I                               *
+*Entries :   240373 : Total  Size=    1018522 bytes  File Size  =     353454 *
+*Baskets :      468 : Basket Size=      65535 bytes  Compression=   2.85     *
+*............................................................................*
+*Br    3 :CCQENu_Blob2DMuonDTheta_order :                                    *
+*         | CCQENu_Blob2DMuonDTheta_order[CCQENu_Blob2DMuonDTheta_order_sz]/I*
+*Entries :   240373 : Total  Size=   11419130 bytes  File Size  =    3042997 *
+*Baskets :      468 : Basket Size=      65535 bytes  Compression=   3.75     *
+*............................................................................*
+*Br    4 :CCQENu_Blob2DPartDRho_order_sz : CCQENu_Blob2DPartDRho_order_sz/I  *
+*Entries :   240373 : Total  Size=    1017578 bytes  File Size  =     352518 *
+*Baskets :      468 : Basket Size=      65535 bytes  Compression=   2.86     *
+*............................................................................*
+*Br    5 :CCQENu_Blob2DPartDRho_order :                                      *
+*         | CCQENu_Blob2DPartDRho_order[CCQENu_Blob2DPartDRho_order_sz]/I    *
+*Entries :   240373 : Total  Size=   11418178 bytes  File Size  =    3037748 *
+*Baskets :      468 : Basket Size=      65535 bytes  Compression=   3.76     *
+*............................................................................*
+*Br    6 :CCQENu_Blob2DPartDTheta_order_sz :                                 *
+*         | CCQENu_Blob2DPartDTheta_order_sz/I                               *
+*Entries :   240373 : Total  Size=    1018522 bytes  File Size  =     353454 *
+*Baskets :      468 : Basket Size=      65535 bytes  Compression=   2.85     *
+*............................................................................*
+*Br    7 :CCQENu_Blob2DPartDTheta_order :                                    *
+*         | CCQENu_Blob2DPartDTheta_order[CCQENu_Blob2DPartDTheta_order_sz]/I*
+*Entries :   240373 : Total  Size=   11419130 bytes  File Size  =    3056471 *
+*Baskets :      468 : Basket Size=      65535 bytes  Compression=   3.73     *
+*............................................................................*
+*Br    8 :CCQENu_Blob2DView_sz : CCQENu_Blob2DView_sz/I                      *
+*Entries :   240373 : Total  Size=    1012858 bytes  File Size  =     347838 *
+*Baskets :      468 : Basket Size=      65535 bytes  Compression=   2.88     *
+*............................................................................*
+*Br    9 :CCQENu_Blob2DView : CCQENu_Blob2DView[CCQENu_Blob2DView_sz]/I      *
+*Entries :   240373 : Total  Size=   11413418 bytes  File Size  =    2016508 *
+*Baskets :      468 : Basket Size=      65535 bytes  Compression=   5.66     *
+*............................................................................*
+*Br   10 :CCQENu_BlobAvgE_order_sz : CCQENu_BlobAvgE_order_sz/I              *
+*Entries :   240373 : Total  Size=    1014746 bytes  File Size  =     349710 *
+*Baskets :      468 : Basket Size=      65535 bytes  Compression=   2.87     *
+*............................................................................*
+*Br   11 :CCQENu_BlobAvgE_order :                                            *
+*         | CCQENu_BlobAvgE_order[CCQENu_BlobAvgE_order_sz]/I                *
+*Entries :   240373 : Total  Size=   11415322 bytes  File Size  =    3695921 *
+*Baskets :      468 : Basket Size=      65535 bytes  Compression=   3.09     *
+*............................................................................*
+*Br   12 :CCQENu_BlobClusID_sz : CCQENu_BlobClusID_sz/I                      *
+*Entries :   240373 : Total  Size=    1012858 bytes  File Size  =     414888 *
+*Baskets :      468 : Basket Size=      65535 bytes  Compression=   2.42     *
+*............................................................................*
+*Br   13 :CCQENu_BlobClusID : CCQENu_BlobClusID[CCQENu_BlobClusID_sz]/I      *
+*Entries :   240373 : Total  Size=   40931320 bytes  File Size  =    4766913 *
+*Baskets :      859 : Basket Size=      65535 bytes  Compression=   8.58     *
+*............................................................................*
+*Br   14 :CCQENu_BlobClusterMaxE_order_sz : CCQENu_BlobClusterMaxE_order_sz/I*
+*Entries :   240373 : Total  Size=    1018050 bytes  File Size  =     352986 *
+*Baskets :      468 : Basket Size=      65535 bytes  Compression=   2.86     *
+*............................................................................*
+*Br   15 :CCQENu_BlobClusterMaxE_order :                                     *
+*         | CCQENu_BlobClusterMaxE_order[CCQENu_BlobClusterMaxE_order_sz]/I  *
+*Entries :   240373 : Total  Size=   11418654 bytes  File Size  =    3687841 *
+*Baskets :      468 : Basket Size=      65535 bytes  Compression=   3.09     *
+*............................................................................*
+*Br   16 :CCQENu_BlobID_sz : CCQENu_BlobID_sz/I                              *
+*Entries :   240373 : Total  Size=    1010970 bytes  File Size  =     345966 *
+*Baskets :      468 : Basket Size=      65535 bytes  Compression=   2.89     *
+*............................................................................*
+*Br   17 :CCQENu_BlobID : CCQENu_BlobID[CCQENu_BlobID_sz]/I                  *
+*Entries :   240373 : Total  Size=   11411514 bytes  File Size  =    1438436 *
+*Baskets :      468 : Basket Size=      65535 bytes  Compression=   7.93     *
+*............................................................................*
+*Br   18 :CCQENu_BlobIncTrackNClus_sz : CCQENu_BlobIncTrackNClus_sz/I        *
+*Entries :   240373 : Total  Size=    1016162 bytes  File Size  =     351114 *
+*Baskets :      468 : Basket Size=      65535 bytes  Compression=   2.87     *
+*............................................................................*
+*Br   19 :CCQENu_BlobIncTrackNClus :                                         *
+*         | CCQENu_BlobIncTrackNClus[CCQENu_BlobIncTrackNClus_sz]/I          *
+*Entries :   240373 : Total  Size=   11416750 bytes  File Size  =     590914 *
+*Baskets :      468 : Basket Size=      65535 bytes  Compression=  19.30     *
+*............................................................................*
+*Br   20 :CCQENu_BlobIs3D_sz : CCQENu_BlobIs3D_sz/I                          *
+*Entries :   240373 : Total  Size=    1011914 bytes  File Size  =     346902 *
+*Baskets :      468 : Basket Size=      65535 bytes  Compression=   2.89     *
+*............................................................................*
+*Br   21 :CCQENu_BlobIs3D : CCQENu_BlobIs3D[CCQENu_BlobIs3D_sz]/I            *
+*Entries :   240373 : Total  Size=   11412466 bytes  File Size  =    1525472 *
+*Baskets :      468 : Basket Size=      65535 bytes  Compression=   7.47     *
+*............................................................................*
+*Br   22 :CCQENu_BlobIsFiducial_sz : CCQENu_BlobIsFiducial_sz/I              *
+*Entries :   240373 : Total  Size=    1014746 bytes  File Size  =     349710 *
+*Baskets :      468 : Basket Size=      65535 bytes  Compression=   2.87     *
+*............................................................................*
+*Br   23 :CCQENu_BlobIsFiducial :                                            *
+*         | CCQENu_BlobIsFiducial[CCQENu_BlobIsFiducial_sz]/I                *
+*Entries :   240373 : Total  Size=   11415322 bytes  File Size  =    1545374 *
+*Baskets :      468 : Basket Size=      65535 bytes  Compression=   7.38     *
+*............................................................................*
+*Br   24 :CCQENu_BlobMCPID_sz : CCQENu_BlobMCPID_sz/I                        *
+*Entries :   240373 : Total  Size=    1012386 bytes  File Size  =     347370 *
+*Baskets :      468 : Basket Size=      65535 bytes  Compression=   2.89     *
+*............................................................................*
+*Br   25 :CCQENu_BlobMCPID : CCQENu_BlobMCPID[CCQENu_BlobMCPID_sz]/I         *
+*Entries :   240373 : Total  Size=   11412942 bytes  File Size  =    1166094 *
+*Baskets :      468 : Basket Size=      65535 bytes  Compression=   9.78     *
+*............................................................................*
+*Br   26 :CCQENu_BlobMCParentTrackID_sz : CCQENu_BlobMCParentTrackID_sz/I    *
+*Entries :   240373 : Total  Size=    1017106 bytes  File Size  =     352050 *
+*Baskets :      468 : Basket Size=      65535 bytes  Compression=   2.86     *
+*............................................................................*
+*Br   27 :CCQENu_BlobMCParentTrackID :                                       *
+*         | CCQENu_BlobMCParentTrackID[CCQENu_BlobMCParentTrackID_sz]/I      *
+*Entries :   240373 : Total  Size=   11417702 bytes  File Size  =     643362 *
+*Baskets :      468 : Basket Size=      65535 bytes  Compression=  17.73     *
+*............................................................................*
+*Br   28 :CCQENu_BlobMCTrackID_sz : CCQENu_BlobMCTrackID_sz/I                *
+*Entries :   240373 : Total  Size=    1014274 bytes  File Size  =     349242 *
+*Baskets :      468 : Basket Size=      65535 bytes  Compression=   2.88     *
+*............................................................................*
+*Br   29 :CCQENu_BlobMCTrackID :                                             *
+*         | CCQENu_BlobMCTrackID[CCQENu_BlobMCTrackID_sz]/I                  *
+*Entries :   240373 : Total  Size=   11414846 bytes  File Size  =    1161393 *
+*Baskets :      468 : Basket Size=      65535 bytes  Compression=   9.82     *
+*............................................................................*
+*Br   30 :CCQENu_BlobMuonDRho_order_sz : CCQENu_BlobMuonDRho_order_sz/I      *
+*Entries :   240373 : Total  Size=    1016634 bytes  File Size  =     351582 *
+*Baskets :      468 : Basket Size=      65535 bytes  Compression=   2.86     *
+*............................................................................*
+*Br   31 :CCQENu_BlobMuonDRho_order :                                        *
+*         | CCQENu_BlobMuonDRho_order[CCQENu_BlobMuonDRho_order_sz]/I        *
+*Entries :   240373 : Total  Size=   11417226 bytes  File Size  =    2504267 *
+*Baskets :      468 : Basket Size=      65535 bytes  Compression=   4.56     *
+*............................................................................*
+*Br   32 :CCQENu_BlobMuonDTheta_order_sz : CCQENu_BlobMuonDTheta_order_sz/I  *
+*Entries :   240373 : Total  Size=    1017578 bytes  File Size  =     352518 *
+*Baskets :      468 : Basket Size=      65535 bytes  Compression=   2.86     *
+*............................................................................*
+*Br   33 :CCQENu_BlobMuonDTheta_order :                                      *
+*         | CCQENu_BlobMuonDTheta_order[CCQENu_BlobMuonDTheta_order_sz]/I    *
+*Entries :   240373 : Total  Size=   11418178 bytes  File Size  =    2371742 *
+*Baskets :      468 : Basket Size=      65535 bytes  Compression=   4.81     *
+*............................................................................*
+*Br   34 :CCQENu_BlobNClusters_sz : CCQENu_BlobNClusters_sz/I                *
+*Entries :   240373 : Total  Size=    1014274 bytes  File Size  =     349242 *
+*Baskets :      468 : Basket Size=      65535 bytes  Compression=   2.88     *
+*............................................................................*
+*Br   35 :CCQENu_BlobNClusters :                                             *
+*         | CCQENu_BlobNClusters[CCQENu_BlobNClusters_sz]/I                  *
+*Entries :   240373 : Total  Size=   11414846 bytes  File Size  =    2398693 *
+*Baskets :      468 : Basket Size=      65535 bytes  Compression=   4.75     *
+*............................................................................*
+*Br   36 :CCQENu_BlobNHeavyIonizingClusters_sz :                             *
+*         | CCQENu_BlobNHeavyIonizingClusters_sz/I                           *
+*Entries :   240373 : Total  Size=    1020410 bytes  File Size  =     355326 *
+*Baskets :      468 : Basket Size=      65535 bytes  Compression=   2.84     *
+*............................................................................*
+*Br   37 :CCQENu_BlobNHeavyIonizingClusters :                                *
+*         | CCQENu_BlobNHeavyIonizingClusters[CCQENu_BlobNHeavyIonizingClusters_sz]/I*
+*Entries :   240373 : Total  Size=   11421034 bytes  File Size  =    2075649 *
+*Baskets :      468 : Basket Size=      65535 bytes  Compression=   5.50     *
+*............................................................................*
+*Br   38 :CCQENu_BlobNIncTracks_sz : CCQENu_BlobNIncTracks_sz/I              *
+*Entries :   240373 : Total  Size=    1014746 bytes  File Size  =      61824 *
+*Baskets :      468 : Basket Size=      65535 bytes  Compression=  16.26     *
+*............................................................................*
+*Br   39 :CCQENu_BlobNIncTracks :                                            *
+*         | CCQENu_BlobNIncTracks[CCQENu_BlobNIncTracks_sz]/I                *
+*Entries :   240373 : Total  Size=    1017234 bytes  File Size  =      64130 *
+*Baskets :      468 : Basket Size=      65535 bytes  Compression=  15.71     *
+*............................................................................*
+*Br   40 :CCQENu_BlobNTracks_sz : CCQENu_BlobNTracks_sz/I                    *
+*Entries :   240373 : Total  Size=    1013330 bytes  File Size  =     357816 *
+*Baskets :      468 : Basket Size=      65535 bytes  Compression=   2.80     *
+*............................................................................*
+*Br   41 :CCQENu_BlobNTracks : CCQENu_BlobNTracks[CCQENu_BlobNTracks_sz]/I   *
+*Entries :   240373 : Total  Size=   21812327 bytes  File Size  =    1030280 *
+*Baskets :      471 : Basket Size=      65535 bytes  Compression=  21.16     *
+*............................................................................*
+*Br   42 :CCQENu_BlobPIDPerCluster_sz : CCQENu_BlobPIDPerCluster_sz/I        *
+*Entries :   240373 : Total  Size=    1016162 bytes  File Size  =      63228 *
+*Baskets :      468 : Basket Size=      65535 bytes  Compression=  15.92     *
+*............................................................................*
+*Br   43 :CCQENu_BlobPIDPerCluster :                                         *
+*         | CCQENu_BlobPIDPerCluster[CCQENu_BlobPIDPerCluster_sz]/I          *
+*Entries :   240373 : Total  Size=    1018662 bytes  File Size  =      65537 *
+*Baskets :      468 : Basket Size=      65535 bytes  Compression=  15.39     *
+*............................................................................*
+*Br   44 :CCQENu_BlobTopMCPID_sz : CCQENu_BlobTopMCPID_sz/I                  *
+*Entries :   240373 : Total  Size=    1013802 bytes  File Size  =     348774 *
+*Baskets :      468 : Basket Size=      65535 bytes  Compression=   2.88     *
+*............................................................................*
+*Br   45 :CCQENu_BlobTopMCPID : CCQENu_BlobTopMCPID[CCQENu_BlobTopMCPID_sz]/I*
+*Entries :   240373 : Total  Size=   11414370 bytes  File Size  =     693346 *
+*Baskets :      468 : Basket Size=      65535 bytes  Compression=  16.45     *
+*............................................................................*
+*Br   46 :CCQENu_BlobTotalE_order_sz : CCQENu_BlobTotalE_order_sz/I          *
+*Entries :   240373 : Total  Size=    1015690 bytes  File Size  =     350646 *
+*Baskets :      468 : Basket Size=      65535 bytes  Compression=   2.87     *
+*............................................................................*
+*Br   47 :CCQENu_BlobTotalE_order :                                          *
+*         | CCQENu_BlobTotalE_order[CCQENu_BlobTotalE_order_sz]/I            *
+*Entries :   240373 : Total  Size=   11416274 bytes  File Size  =    3666684 *
+*Baskets :      468 : Basket Size=      65535 bytes  Compression=   3.11     *
+*............................................................................*
+*Br   48 :CCQENu_BlobTrackNClus_sz : CCQENu_BlobTrackNClus_sz/I              *
+*Entries :   240373 : Total  Size=    1014746 bytes  File Size  =     349710 *
+*Baskets :      468 : Basket Size=      65535 bytes  Compression=   2.87     *
+*............................................................................*
+*Br   49 :CCQENu_BlobTrackNClus :                                            *
+*         | CCQENu_BlobTrackNClus[CCQENu_BlobTrackNClus_sz]/I                *
+*Entries :   240373 : Total  Size=   11415322 bytes  File Size  =     975022 *
+*Baskets :      468 : Basket Size=      65535 bytes  Compression=  11.70     *
+*............................................................................*
+*Br   50 :CCQENu_BlobViewPerCluster_sz : CCQENu_BlobViewPerCluster_sz/I      *
+*Entries :   240373 : Total  Size=    1016634 bytes  File Size  =      63696 *
+*Baskets :      468 : Basket Size=      65535 bytes  Compression=  15.81     *
+*............................................................................*
+*Br   51 :CCQENu_BlobViewPerCluster :                                        *
+*         | CCQENu_BlobViewPerCluster[CCQENu_BlobViewPerCluster_sz]/I        *
+*Entries :   240373 : Total  Size=    1019138 bytes  File Size  =      66005 *
+*Baskets :      468 : Basket Size=      65535 bytes  Compression=  15.29     *
+*............................................................................*
+*Br   52 :CCQENu_BlobVtxDR_order_sz : CCQENu_BlobVtxDR_order_sz/I            *
+*Entries :   240373 : Total  Size=    1015218 bytes  File Size  =     350178 *
+*Baskets :      468 : Basket Size=      65535 bytes  Compression=   2.87     *
+*............................................................................*
+*Br   53 :CCQENu_BlobVtxDR_order :                                           *
+*         | CCQENu_BlobVtxDR_order[CCQENu_BlobVtxDR_order_sz]/I              *
+*Entries :   240373 : Total  Size=   11415798 bytes  File Size  =    2358237 *
+*Baskets :      468 : Basket Size=      65535 bytes  Compression=   4.84     *
+*............................................................................*
+*Br   54 :CCQENu_BlobVtxDZ_order_sz : CCQENu_BlobVtxDZ_order_sz/I            *
+*Entries :   240373 : Total  Size=    1015218 bytes  File Size  =      62292 *
+*Baskets :      468 : Basket Size=      65535 bytes  Compression=  16.14     *
+*............................................................................*
+*Br   55 :CCQENu_BlobVtxDZ_order :                                           *
+*         | CCQENu_BlobVtxDZ_order[CCQENu_BlobVtxDZ_order_sz]/I              *
+*Entries :   240373 : Total  Size=    1017710 bytes  File Size  =      64604 *
+*Baskets :      468 : Basket Size=      65535 bytes  Compression=  15.60     *
+*............................................................................*
+*Br   56 :CCQENu_Blob2DBeamDTPos_sz : CCQENu_Blob2DBeamDTPos_sz/I            *
+*Entries :   240373 : Total  Size=    1015218 bytes  File Size  =     350178 *
+*Baskets :      468 : Basket Size=      65535 bytes  Compression=   2.87     *
+*............................................................................*
+*Br   57 :CCQENu_Blob2DBeamDTPos :                                           *
+*         | CCQENu_Blob2DBeamDTPos[CCQENu_Blob2DBeamDTPos_sz]/D              *
+*Entries :   240373 : Total  Size=   21814258 bytes  File Size  =   20372505 *
+*Baskets :      471 : Basket Size=      65535 bytes  Compression=   1.07     *
+*............................................................................*
+*Br   58 :CCQENu_Blob2DBeamDZ_sz : CCQENu_Blob2DBeamDZ_sz/I                  *
+*Entries :   240373 : Total  Size=    1013802 bytes  File Size  =     348774 *
+*Baskets :      468 : Basket Size=      65535 bytes  Compression=   2.88     *
+*............................................................................*
+*Br   59 :CCQENu_Blob2DBeamDZ : CCQENu_Blob2DBeamDZ[CCQENu_Blob2DBeamDZ_sz]/D*
+*Entries :   240373 : Total  Size=   21812821 bytes  File Size  =   16177013 *
+*Baskets :      471 : Basket Size=      65535 bytes  Compression=   1.35     *
+*............................................................................*
+*Br   60 :CCQENu_Blob2DMuonDRho_sz : CCQENu_Blob2DMuonDRho_sz/I              *
+*Entries :   240373 : Total  Size=    1014746 bytes  File Size  =     349710 *
+*Baskets :      468 : Basket Size=      65535 bytes  Compression=   2.87     *
+*............................................................................*
+*Br   61 :CCQENu_Blob2DMuonDRho :                                            *
+*         | CCQENu_Blob2DMuonDRho[CCQENu_Blob2DMuonDRho_sz]/D                *
+*Entries :   240373 : Total  Size=   21813779 bytes  File Size  =   11875988 *
+*Baskets :      471 : Basket Size=      65535 bytes  Compression=   1.84     *
+*............................................................................*
+*Br   62 :CCQENu_Blob2DMuonDTheta_sz : CCQENu_Blob2DMuonDTheta_sz/I          *
+*Entries :   240373 : Total  Size=    1015690 bytes  File Size  =     350646 *
+*Baskets :      468 : Basket Size=      65535 bytes  Compression=   2.87     *
+*............................................................................*
+*Br   63 :CCQENu_Blob2DMuonDTheta :                                          *
+*         | CCQENu_Blob2DMuonDTheta[CCQENu_Blob2DMuonDTheta_sz]/D            *
+*Entries :   240373 : Total  Size=   21814737 bytes  File Size  =   11881428 *
+*Baskets :      471 : Basket Size=      65535 bytes  Compression=   1.84     *
+*............................................................................*
+*Br   64 :CCQENu_Blob2DPartDRho_sz : CCQENu_Blob2DPartDRho_sz/I              *
+*Entries :   240373 : Total  Size=    1014746 bytes  File Size  =     349710 *
+*Baskets :      468 : Basket Size=      65535 bytes  Compression=   2.87     *
+*............................................................................*
+*Br   65 :CCQENu_Blob2DPartDRho :                                            *
+*         | CCQENu_Blob2DPartDRho[CCQENu_Blob2DPartDRho_sz]/D                *
+*Entries :   240373 : Total  Size=   21813779 bytes  File Size  =   11862217 *
+*Baskets :      471 : Basket Size=      65535 bytes  Compression=   1.84     *
+*............................................................................*
+*Br   66 :CCQENu_Blob2DPartDTheta_sz : CCQENu_Blob2DPartDTheta_sz/I          *
+*Entries :   240373 : Total  Size=    1015690 bytes  File Size  =     350646 *
+*Baskets :      468 : Basket Size=      65535 bytes  Compression=   2.87     *
+*............................................................................*
+*Br   67 :CCQENu_Blob2DPartDTheta :                                          *
+*         | CCQENu_Blob2DPartDTheta[CCQENu_Blob2DPartDTheta_sz]/D            *
+*Entries :   240373 : Total  Size=   21814737 bytes  File Size  =   11847189 *
+*Baskets :      471 : Basket Size=      65535 bytes  Compression=   1.84     *
+*............................................................................*
+*Br   68 :CCQENu_Blob2DPartDZ_sz : CCQENu_Blob2DPartDZ_sz/I                  *
+*Entries :   240373 : Total  Size=    1013802 bytes  File Size  =     348774 *
+*Baskets :      468 : Basket Size=      65535 bytes  Compression=   2.88     *
+*............................................................................*
+*Br   69 :CCQENu_Blob2DPartDZ : CCQENu_Blob2DPartDZ[CCQENu_Blob2DPartDZ_sz]/D*
+*Entries :   240373 : Total  Size=   21812821 bytes  File Size  =   20558983 *
+*Baskets :      471 : Basket Size=      65535 bytes  Compression=   1.06     *
+*............................................................................*
+*Br   70 :CCQENu_Blob2DVtxDR_sz : CCQENu_Blob2DVtxDR_sz/I                    *
+*Entries :   240373 : Total  Size=    1013330 bytes  File Size  =     348306 *
+*Baskets :      468 : Basket Size=      65535 bytes  Compression=   2.88     *
+*............................................................................*
+*Br   71 :CCQENu_Blob2DVtxDR : CCQENu_Blob2DVtxDR[CCQENu_Blob2DVtxDR_sz]/D   *
+*Entries :   240373 : Total  Size=   21812342 bytes  File Size  =   20366619 *
+*Baskets :      471 : Basket Size=      65535 bytes  Compression=   1.07     *
+*............................................................................*
+*Br   72 :CCQENu_Blob2DVtxDTPos_sz : CCQENu_Blob2DVtxDTPos_sz/I              *
+*Entries :   240373 : Total  Size=    1014746 bytes  File Size  =     349710 *
+*Baskets :      468 : Basket Size=      65535 bytes  Compression=   2.87     *
+*............................................................................*
+*Br   73 :CCQENu_Blob2DVtxDTPos :                                            *
+*         | CCQENu_Blob2DVtxDTPos[CCQENu_Blob2DVtxDTPos_sz]/D                *
+*Entries :   240373 : Total  Size=   21813779 bytes  File Size  =   20391689 *
+*Baskets :      471 : Basket Size=      65535 bytes  Compression=   1.07     *
+*............................................................................*
+*Br   74 :CCQENu_Blob2DVtxDZ_sz : CCQENu_Blob2DVtxDZ_sz/I                    *
+*Entries :   240373 : Total  Size=    1013330 bytes  File Size  =     348306 *
+*Baskets :      468 : Basket Size=      65535 bytes  Compression=   2.88     *
+*............................................................................*
+*Br   75 :CCQENu_Blob2DVtxDZ : CCQENu_Blob2DVtxDZ[CCQENu_Blob2DVtxDZ_sz]/D   *
+*Entries :   240373 : Total  Size=   21812342 bytes  File Size  =    8286371 *
+*Baskets :      471 : Basket Size=      65535 bytes  Compression=   2.63     *
+*............................................................................*
+*Br   76 :CCQENu_BlobAvgE_sz : CCQENu_BlobAvgE_sz/I                          *
+*Entries :   240373 : Total  Size=    1011914 bytes  File Size  =     346902 *
+*Baskets :      468 : Basket Size=      65535 bytes  Compression=   2.89     *
+*............................................................................*
+*Br   77 :CCQENu_BlobAvgE : CCQENu_BlobAvgE[CCQENu_BlobAvgE_sz]/D            *
+*Entries :   240373 : Total  Size=   21810905 bytes  File Size  =   20525500 *
+*Baskets :      471 : Basket Size=      65535 bytes  Compression=   1.06     *
+*............................................................................*
+*Br   78 :CCQENu_BlobBeamDZ_sz : CCQENu_BlobBeamDZ_sz/I                      *
+*Entries :   240373 : Total  Size=    1012858 bytes  File Size  =     347838 *
+*Baskets :      468 : Basket Size=      65535 bytes  Compression=   2.88     *
+*............................................................................*
+*Br   79 :CCQENu_BlobBeamDZ : CCQENu_BlobBeamDZ[CCQENu_BlobBeamDZ_sz]/D      *
+*Entries :   240373 : Total  Size=   21811863 bytes  File Size  =    9281929 *
+*Baskets :      471 : Basket Size=      65535 bytes  Compression=   2.35     *
+*............................................................................*
+*Br   80 :CCQENu_BlobBegT_sz : CCQENu_BlobBegT_sz/I                          *
+*Entries :   240373 : Total  Size=    1011914 bytes  File Size  =     346902 *
+*Baskets :      468 : Basket Size=      65535 bytes  Compression=   2.89     *
+*............................................................................*
+*Br   81 :CCQENu_BlobBegT : CCQENu_BlobBegT[CCQENu_BlobBegT_sz]/D            *
+*Entries :   240373 : Total  Size=   21810905 bytes  File Size  =    7638778 *
+*Baskets :      471 : Basket Size=      65535 bytes  Compression=   2.85     *
+*............................................................................*
+*Br   82 :CCQENu_BlobBegX_sz : CCQENu_BlobBegX_sz/I                          *
+*Entries :   240373 : Total  Size=    1011914 bytes  File Size  =     346902 *
+*Baskets :      468 : Basket Size=      65535 bytes  Compression=   2.89     *
+*............................................................................*
+*Br   83 :CCQENu_BlobBegX : CCQENu_BlobBegX[CCQENu_BlobBegX_sz]/D            *
+*Entries :   240373 : Total  Size=   21810905 bytes  File Size  =    6293365 *
+*Baskets :      471 : Basket Size=      65535 bytes  Compression=   3.46     *
+*............................................................................*
+*Br   84 :CCQENu_BlobBegY_sz : CCQENu_BlobBegY_sz/I                          *
+*Entries :   240373 : Total  Size=    1011914 bytes  File Size  =     346902 *
+*Baskets :      468 : Basket Size=      65535 bytes  Compression=   2.89     *
+*............................................................................*
+*Br   85 :CCQENu_BlobBegY : CCQENu_BlobBegY[CCQENu_BlobBegY_sz]/D            *
+*Entries :   240373 : Total  Size=   21810905 bytes  File Size  =    7370119 *
+*Baskets :      471 : Basket Size=      65535 bytes  Compression=   2.96     *
+*............................................................................*
+*Br   86 :CCQENu_BlobBegZ_sz : CCQENu_BlobBegZ_sz/I                          *
+*Entries :   240373 : Total  Size=    1011914 bytes  File Size  =     346902 *
+*Baskets :      468 : Basket Size=      65535 bytes  Compression=   2.89     *
+*............................................................................*
+*Br   87 :CCQENu_BlobBegZ : CCQENu_BlobBegZ[CCQENu_BlobBegZ_sz]/D            *
+*Entries :   240373 : Total  Size=   21810905 bytes  File Size  =    7648055 *
+*Baskets :      471 : Basket Size=      65535 bytes  Compression=   2.85     *
+*............................................................................*
+*Br   88 :CCQENu_BlobClusterMaxE_sz : CCQENu_BlobClusterMaxE_sz/I            *
+*Entries :   240373 : Total  Size=    1015218 bytes  File Size  =     350178 *
+*Baskets :      468 : Basket Size=      65535 bytes  Compression=   2.87     *
+*............................................................................*
+*Br   89 :CCQENu_BlobClusterMaxE :                                           *
+*         | CCQENu_BlobClusterMaxE[CCQENu_BlobClusterMaxE_sz]/D              *
+*Entries :   240373 : Total  Size=   21814258 bytes  File Size  =   20524014 *
+*Baskets :      471 : Basket Size=      65535 bytes  Compression=   1.06     *
+*............................................................................*
+*Br   90 :CCQENu_BlobClusterMinE_sz : CCQENu_BlobClusterMinE_sz/I            *
+*Entries :   240373 : Total  Size=    1015218 bytes  File Size  =     350178 *
+*Baskets :      468 : Basket Size=      65535 bytes  Compression=   2.87     *
+*............................................................................*
+*Br   91 :CCQENu_BlobClusterMinE :                                           *
+*         | CCQENu_BlobClusterMinE[CCQENu_BlobClusterMinE_sz]/D              *
+*Entries :   240373 : Total  Size=   21814258 bytes  File Size  =   20539012 *
+*Baskets :      471 : Basket Size=      65535 bytes  Compression=   1.06     *
+*............................................................................*
+*Br   92 :CCQENu_BlobCoplanarityAngle_sz : CCQENu_BlobCoplanarityAngle_sz/I  *
+*Entries :   240373 : Total  Size=    1017578 bytes  File Size  =     352518 *
+*Baskets :      468 : Basket Size=      65535 bytes  Compression=   2.86     *
+*............................................................................*
+*Br   93 :CCQENu_BlobCoplanarityAngle :                                      *
+*         | CCQENu_BlobCoplanarityAngle[CCQENu_BlobCoplanarityAngle_sz]/D    *
+*Entries :   240373 : Total  Size=   21816653 bytes  File Size  =    9306913 *
+*Baskets :      471 : Basket Size=      65535 bytes  Compression=   2.34     *
+*............................................................................*
+*Br   94 :CCQENu_BlobEndT_sz : CCQENu_BlobEndT_sz/I                          *
+*Entries :   240373 : Total  Size=    1011914 bytes  File Size  =     346902 *
+*Baskets :      468 : Basket Size=      65535 bytes  Compression=   2.89     *
+*............................................................................*
+*Br   95 :CCQENu_BlobEndT : CCQENu_BlobEndT[CCQENu_BlobEndT_sz]/D            *
+*Entries :   240373 : Total  Size=   21810905 bytes  File Size  =    7638314 *
+*Baskets :      471 : Basket Size=      65535 bytes  Compression=   2.85     *
+*............................................................................*
+*Br   96 :CCQENu_BlobEndX_sz : CCQENu_BlobEndX_sz/I                          *
+*Entries :   240373 : Total  Size=    1011914 bytes  File Size  =     346902 *
+*Baskets :      468 : Basket Size=      65535 bytes  Compression=   2.89     *
+*............................................................................*
+*Br   97 :CCQENu_BlobEndX : CCQENu_BlobEndX[CCQENu_BlobEndX_sz]/D            *
+*Entries :   240373 : Total  Size=   21810905 bytes  File Size  =    6233634 *
+*Baskets :      471 : Basket Size=      65535 bytes  Compression=   3.50     *
+*............................................................................*
+*Br   98 :CCQENu_BlobEndY_sz : CCQENu_BlobEndY_sz/I                          *
+*Entries :   240373 : Total  Size=    1011914 bytes  File Size  =     346902 *
+*Baskets :      468 : Basket Size=      65535 bytes  Compression=   2.89     *
+*............................................................................*
+*Br   99 :CCQENu_BlobEndY : CCQENu_BlobEndY[CCQENu_BlobEndY_sz]/D            *
+*Entries :   240373 : Total  Size=   21810905 bytes  File Size  =    7345836 *
+*Baskets :      471 : Basket Size=      65535 bytes  Compression=   2.97     *
+*............................................................................*
+*Br  100 :CCQENu_BlobEndZ_sz : CCQENu_BlobEndZ_sz/I                          *
+*Entries :   240373 : Total  Size=    1011914 bytes  File Size  =     346902 *
+*Baskets :      468 : Basket Size=      65535 bytes  Compression=   2.89     *
+*............................................................................*
+*Br  101 :CCQENu_BlobEndZ : CCQENu_BlobEndZ[CCQENu_BlobEndZ_sz]/D            *
+*Entries :   240373 : Total  Size=   21810905 bytes  File Size  =    7648741 *
+*Baskets :      471 : Basket Size=      65535 bytes  Compression=   2.85     *
+*............................................................................*
+*Br  102 :CCQENu_BlobEnergyPerCluster_sz : CCQENu_BlobEnergyPerCluster_sz/I  *
+*Entries :   240373 : Total  Size=    1017578 bytes  File Size  =     419568 *
+*Baskets :      468 : Basket Size=      65535 bytes  Compression=   2.40     *
+*............................................................................*
+*Br  103 :CCQENu_BlobEnergyPerCluster :                                      *
+*         | CCQENu_BlobEnergyPerCluster[CCQENu_BlobEnergyPerCluster_sz]/D    *
+*Entries :   240373 : Total  Size=   80894129 bytes  File Size  =   77099338 *
+*Baskets :     1526 : Basket Size=      65535 bytes  Compression=   1.05     *
+*............................................................................*
+*Br  104 :CCQENu_BlobIncTrackAx_sz : CCQENu_BlobIncTrackAx_sz/I              *
+*Entries :   240373 : Total  Size=    1014746 bytes  File Size  =     349710 *
+*Baskets :      468 : Basket Size=      65535 bytes  Compression=   2.87     *
+*............................................................................*
+*Br  105 :CCQENu_BlobIncTrackAx :                                            *
+*         | CCQENu_BlobIncTrackAx[CCQENu_BlobIncTrackAx_sz]/D                *
+*Entries :   240373 : Total  Size=   21813779 bytes  File Size  =     664575 *
+*Baskets :      471 : Basket Size=      65535 bytes  Compression=  32.81     *
+*............................................................................*
+*Br  106 :CCQENu_BlobIncTrackAy_sz : CCQENu_BlobIncTrackAy_sz/I              *
+*Entries :   240373 : Total  Size=    1014746 bytes  File Size  =     349710 *
+*Baskets :      468 : Basket Size=      65535 bytes  Compression=   2.87     *
+*............................................................................*
+*Br  107 :CCQENu_BlobIncTrackAy :                                            *
+*         | CCQENu_BlobIncTrackAy[CCQENu_BlobIncTrackAy_sz]/D                *
+*Entries :   240373 : Total  Size=   21813779 bytes  File Size  =     664575 *
+*Baskets :      471 : Basket Size=      65535 bytes  Compression=  32.81     *
+*............................................................................*
+*Br  108 :CCQENu_BlobIncTrackE_sz : CCQENu_BlobIncTrackE_sz/I                *
+*Entries :   240373 : Total  Size=    1014274 bytes  File Size  =     349242 *
+*Baskets :      468 : Basket Size=      65535 bytes  Compression=   2.88     *
+*............................................................................*
+*Br  109 :CCQENu_BlobIncTrackE :                                             *
+*         | CCQENu_BlobIncTrackE[CCQENu_BlobIncTrackE_sz]/D                  *
+*Entries :   240373 : Total  Size=   21813300 bytes  File Size  =     663998 *
+*Baskets :      471 : Basket Size=      65535 bytes  Compression=  32.84     *
+*............................................................................*
+*Br  110 :CCQENu_BlobIncTrackL_sz : CCQENu_BlobIncTrackL_sz/I                *
+*Entries :   240373 : Total  Size=    1014274 bytes  File Size  =     349242 *
+*Baskets :      468 : Basket Size=      65535 bytes  Compression=   2.88     *
+*............................................................................*
+*Br  111 :CCQENu_BlobIncTrackL :                                             *
+*         | CCQENu_BlobIncTrackL[CCQENu_BlobIncTrackL_sz]/D                  *
+*Entries :   240373 : Total  Size=   21813300 bytes  File Size  =     663998 *
+*Baskets :      471 : Basket Size=      65535 bytes  Compression=  32.84     *
+*............................................................................*
+*Br  112 :CCQENu_BlobIncTrackT_sz : CCQENu_BlobIncTrackT_sz/I                *
+*Entries :   240373 : Total  Size=    1014274 bytes  File Size  =     349242 *
+*Baskets :      468 : Basket Size=      65535 bytes  Compression=   2.88     *
+*............................................................................*
+*Br  113 :CCQENu_BlobIncTrackT :                                             *
+*         | CCQENu_BlobIncTrackT[CCQENu_BlobIncTrackT_sz]/D                  *
+*Entries :   240373 : Total  Size=   21813300 bytes  File Size  =     663998 *
+*Baskets :      471 : Basket Size=      65535 bytes  Compression=  32.84     *
+*............................................................................*
+*Br  114 :CCQENu_BlobIncTrackX_sz : CCQENu_BlobIncTrackX_sz/I                *
+*Entries :   240373 : Total  Size=    1014274 bytes  File Size  =     349242 *
+*Baskets :      468 : Basket Size=      65535 bytes  Compression=   2.88     *
+*............................................................................*
+*Br  115 :CCQENu_BlobIncTrackX :                                             *
+*         | CCQENu_BlobIncTrackX[CCQENu_BlobIncTrackX_sz]/D                  *
+*Entries :   240373 : Total  Size=   21813300 bytes  File Size  =     663998 *
+*Baskets :      471 : Basket Size=      65535 bytes  Compression=  32.84     *
+*............................................................................*
+*Br  116 :CCQENu_BlobIncTrackY_sz : CCQENu_BlobIncTrackY_sz/I                *
+*Entries :   240373 : Total  Size=    1014274 bytes  File Size  =     349242 *
+*Baskets :      468 : Basket Size=      65535 bytes  Compression=   2.88     *
+*............................................................................*
+*Br  117 :CCQENu_BlobIncTrackY :                                             *
+*         | CCQENu_BlobIncTrackY[CCQENu_BlobIncTrackY_sz]/D                  *
+*Entries :   240373 : Total  Size=   21813300 bytes  File Size  =     663998 *
+*Baskets :      471 : Basket Size=      65535 bytes  Compression=  32.84     *
+*............................................................................*
+*Br  118 :CCQENu_BlobIncTrackZ_sz : CCQENu_BlobIncTrackZ_sz/I                *
+*Entries :   240373 : Total  Size=    1014274 bytes  File Size  =     349242 *
+*Baskets :      468 : Basket Size=      65535 bytes  Compression=   2.88     *
+*............................................................................*
+*Br  119 :CCQENu_BlobIncTrackZ :                                             *
+*         | CCQENu_BlobIncTrackZ[CCQENu_BlobIncTrackZ_sz]/D                  *
+*Entries :   240373 : Total  Size=   21813300 bytes  File Size  =     663998 *
+*Baskets :      471 : Basket Size=      65535 bytes  Compression=  32.84     *
+*............................................................................*
+*Br  120 :CCQENu_BlobMCTrackE_sz : CCQENu_BlobMCTrackE_sz/I                  *
+*Entries :   240373 : Total  Size=    1013802 bytes  File Size  =     348774 *
+*Baskets :      468 : Basket Size=      65535 bytes  Compression=   2.88     *
+*............................................................................*
+*Br  121 :CCQENu_BlobMCTrackE : CCQENu_BlobMCTrackE[CCQENu_BlobMCTrackE_sz]/D*
+*Entries :   240373 : Total  Size=   21812821 bytes  File Size  =    2670588 *
+*Baskets :      471 : Basket Size=      65535 bytes  Compression=   8.16     *
+*............................................................................*
+*Br  122 :CCQENu_BlobMCTrackPx_sz : CCQENu_BlobMCTrackPx_sz/I                *
+*Entries :   240373 : Total  Size=    1014274 bytes  File Size  =     349242 *
+*Baskets :      468 : Basket Size=      65535 bytes  Compression=   2.88     *
+*............................................................................*
+*Br  123 :CCQENu_BlobMCTrackPx :                                             *
+*         | CCQENu_BlobMCTrackPx[CCQENu_BlobMCTrackPx_sz]/D                  *
+*Entries :   240373 : Total  Size=   21813300 bytes  File Size  =    3049487 *
+*Baskets :      471 : Basket Size=      65535 bytes  Compression=   7.15     *
+*............................................................................*
+*Br  124 :CCQENu_BlobMCTrackPy_sz : CCQENu_BlobMCTrackPy_sz/I                *
+*Entries :   240373 : Total  Size=    1014274 bytes  File Size  =     349242 *
+*Baskets :      468 : Basket Size=      65535 bytes  Compression=   2.88     *
+*............................................................................*
+*Br  125 :CCQENu_BlobMCTrackPy :                                             *
+*         | CCQENu_BlobMCTrackPy[CCQENu_BlobMCTrackPy_sz]/D                  *
+*Entries :   240373 : Total  Size=   21813300 bytes  File Size  =    3065109 *
+*Baskets :      471 : Basket Size=      65535 bytes  Compression=   7.11     *
+*............................................................................*
+*Br  126 :CCQENu_BlobMCTrackPz_sz : CCQENu_BlobMCTrackPz_sz/I                *
+*Entries :   240373 : Total  Size=    1014274 bytes  File Size  =     349242 *
+*Baskets :      468 : Basket Size=      65535 bytes  Compression=   2.88     *
+*............................................................................*
+*Br  127 :CCQENu_BlobMCTrackPz :                                             *
+*         | CCQENu_BlobMCTrackPz[CCQENu_BlobMCTrackPz_sz]/D                  *
+*Entries :   240373 : Total  Size=   21813300 bytes  File Size  =    2721335 *
+*Baskets :      471 : Basket Size=      65535 bytes  Compression=   8.01     *
+*............................................................................*
+*Br  128 :CCQENu_BlobMCTrackT_sz : CCQENu_BlobMCTrackT_sz/I                  *
+*Entries :   240373 : Total  Size=    1013802 bytes  File Size  =     348774 *
+*Baskets :      468 : Basket Size=      65535 bytes  Compression=   2.88     *
+*............................................................................*
+*Br  129 :CCQENu_BlobMCTrackT : CCQENu_BlobMCTrackT[CCQENu_BlobMCTrackT_sz]/D*
+*Entries :   240373 : Total  Size=   21812821 bytes  File Size  =    2359951 *
+*Baskets :      471 : Basket Size=      65535 bytes  Compression=   9.24     *
+*............................................................................*
+*Br  130 :CCQENu_BlobMCTrackX_sz : CCQENu_BlobMCTrackX_sz/I                  *
+*Entries :   240373 : Total  Size=    1013802 bytes  File Size  =     348774 *
+*Baskets :      468 : Basket Size=      65535 bytes  Compression=   2.88     *
+*............................................................................*
+*Br  131 :CCQENu_BlobMCTrackX : CCQENu_BlobMCTrackX[CCQENu_BlobMCTrackX_sz]/D*
+*Entries :   240373 : Total  Size=   21812821 bytes  File Size  =    2397283 *
+*Baskets :      471 : Basket Size=      65535 bytes  Compression=   9.09     *
+*............................................................................*
+*Br  132 :CCQENu_BlobMCTrackY_sz : CCQENu_BlobMCTrackY_sz/I                  *
+*Entries :   240373 : Total  Size=    1013802 bytes  File Size  =     348774 *
+*Baskets :      468 : Basket Size=      65535 bytes  Compression=   2.88     *
+*............................................................................*
+*Br  133 :CCQENu_BlobMCTrackY : CCQENu_BlobMCTrackY[CCQENu_BlobMCTrackY_sz]/D*
+*Entries :   240373 : Total  Size=   21812821 bytes  File Size  =    2395998 *
+*Baskets :      471 : Basket Size=      65535 bytes  Compression=   9.10     *
+*............................................................................*
+*Br  134 :CCQENu_BlobMCTrackZ_sz : CCQENu_BlobMCTrackZ_sz/I                  *
+*Entries :   240373 : Total  Size=    1013802 bytes  File Size  =     348774 *
+*Baskets :      468 : Basket Size=      65535 bytes  Compression=   2.88     *
+*............................................................................*
+*Br  135 :CCQENu_BlobMCTrackZ : CCQENu_BlobMCTrackZ[CCQENu_BlobMCTrackZ_sz]/D*
+*Entries :   240373 : Total  Size=   21812821 bytes  File Size  =    2217937 *
+*Baskets :      471 : Basket Size=      65535 bytes  Compression=   9.83     *
+*............................................................................*
+*Br  136 :CCQENu_BlobMuonDRho_sz : CCQENu_BlobMuonDRho_sz/I                  *
+*Entries :   240373 : Total  Size=    1013802 bytes  File Size  =     348774 *
+*Baskets :      468 : Basket Size=      65535 bytes  Compression=   2.88     *
+*............................................................................*
+*Br  137 :CCQENu_BlobMuonDRho : CCQENu_BlobMuonDRho[CCQENu_BlobMuonDRho_sz]/D*
+*Entries :   240373 : Total  Size=   21812821 bytes  File Size  =    9146642 *
+*Baskets :      471 : Basket Size=      65535 bytes  Compression=   2.38     *
+*............................................................................*
+*Br  138 :CCQENu_BlobMuonDTheta_sz : CCQENu_BlobMuonDTheta_sz/I              *
+*Entries :   240373 : Total  Size=    1014746 bytes  File Size  =     349710 *
+*Baskets :      468 : Basket Size=      65535 bytes  Compression=   2.87     *
+*............................................................................*
+*Br  139 :CCQENu_BlobMuonDTheta :                                            *
+*         | CCQENu_BlobMuonDTheta[CCQENu_BlobMuonDTheta_sz]/D                *
+*Entries :   240373 : Total  Size=   21813779 bytes  File Size  =    9286603 *
+*Baskets :      471 : Basket Size=      65535 bytes  Compression=   2.35     *
+*............................................................................*
+*Br  140 :CCQENu_BlobReactionPlaneAngle_sz :                                 *
+*         | CCQENu_BlobReactionPlaneAngle_sz/I                               *
+*Entries :   240373 : Total  Size=    1018522 bytes  File Size  =     353454 *
+*Baskets :      468 : Basket Size=      65535 bytes  Compression=   2.85     *
+*............................................................................*
+*Br  141 :CCQENu_BlobReactionPlaneAngle :                                    *
+*         | CCQENu_BlobReactionPlaneAngle[CCQENu_BlobReactionPlaneAngle_sz]/D*
+*Entries :   240373 : Total  Size=   21817611 bytes  File Size  =    9317636 *
+*Baskets :      471 : Basket Size=      65535 bytes  Compression=   2.34     *
+*............................................................................*
+*Br  142 :CCQENu_BlobT_sz : CCQENu_BlobT_sz/I                                *
+*Entries :   240373 : Total  Size=    1010498 bytes  File Size  =     345498 *
+*Baskets :      468 : Basket Size=      65535 bytes  Compression=   2.90     *
+*............................................................................*
+*Br  143 :CCQENu_BlobT : CCQENu_BlobT[CCQENu_BlobT_sz]/D                     *
+*Entries :   240373 : Total  Size=   21809468 bytes  File Size  =   19717520 *
+*Baskets :      471 : Basket Size=      65535 bytes  Compression=   1.11     *
+*............................................................................*
+*Br  144 :CCQENu_BlobTPos_sz : CCQENu_BlobTPos_sz/I                          *
+*Entries :   240373 : Total  Size=    1011914 bytes  File Size  =     346902 *
+*Baskets :      468 : Basket Size=      65535 bytes  Compression=   2.89     *
+*............................................................................*
+*Br  145 :CCQENu_BlobTPos : CCQENu_BlobTPos[CCQENu_BlobTPos_sz]/D            *
+*Entries :   240373 : Total  Size=   21810905 bytes  File Size  =   14031584 *
+*Baskets :      471 : Basket Size=      65535 bytes  Compression=   1.55     *
+*............................................................................*
+*Br  146 :CCQENu_BlobTPosPerCluster_sz : CCQENu_BlobTPosPerCluster_sz/I      *
+*Entries :   240373 : Total  Size=    1016634 bytes  File Size  =      63696 *
+*Baskets :      468 : Basket Size=      65535 bytes  Compression=  15.81     *
+*............................................................................*
+*Br  147 :CCQENu_BlobTPosPerCluster :                                        *
+*         | CCQENu_BlobTPosPerCluster[CCQENu_BlobTPosPerCluster_sz]/D        *
+*Entries :   240373 : Total  Size=    1019153 bytes  File Size  =      66005 *
+*Baskets :      468 : Basket Size=      65535 bytes  Compression=  15.29     *
+*............................................................................*
+*Br  148 :CCQENu_BlobTimePerCluster_sz : CCQENu_BlobTimePerCluster_sz/I      *
+*Entries :   240373 : Total  Size=    1016634 bytes  File Size  =     418632 *
+*Baskets :      468 : Basket Size=      65535 bytes  Compression=   2.41     *
+*............................................................................*
+*Br  149 :CCQENu_BlobTimePerCluster :                                        *
+*         | CCQENu_BlobTimePerCluster[CCQENu_BlobTimePerCluster_sz]/D        *
+*Entries :   240373 : Total  Size=   80891061 bytes  File Size  =   71147834 *
+*Baskets :     1526 : Basket Size=      65535 bytes  Compression=   1.14     *
+*............................................................................*
+*Br  150 :CCQENu_BlobTotalE_sz : CCQENu_BlobTotalE_sz/I                      *
+*Entries :   240373 : Total  Size=    1012858 bytes  File Size  =     347838 *
+*Baskets :      468 : Basket Size=      65535 bytes  Compression=   2.88     *
+*............................................................................*
+*Br  151 :CCQENu_BlobTotalE : CCQENu_BlobTotalE[CCQENu_BlobTotalE_sz]/D      *
+*Entries :   240373 : Total  Size=   21811863 bytes  File Size  =   20527142 *
+*Baskets :      471 : Basket Size=      65535 bytes  Compression=   1.06     *
+*............................................................................*
+*Br  152 :CCQENu_BlobTrackAx_sz : CCQENu_BlobTrackAx_sz/I                    *
+*Entries :   240373 : Total  Size=    1013330 bytes  File Size  =     348306 *
+*Baskets :      468 : Basket Size=      65535 bytes  Compression=   2.88     *
+*............................................................................*
+*Br  153 :CCQENu_BlobTrackAx : CCQENu_BlobTrackAx[CCQENu_BlobTrackAx_sz]/D   *
+*Entries :   240373 : Total  Size=   21812342 bytes  File Size  =    1837717 *
+*Baskets :      471 : Basket Size=      65535 bytes  Compression=  11.86     *
+*............................................................................*
+*Br  154 :CCQENu_BlobTrackAy_sz : CCQENu_BlobTrackAy_sz/I                    *
+*Entries :   240373 : Total  Size=    1013330 bytes  File Size  =     348306 *
+*Baskets :      468 : Basket Size=      65535 bytes  Compression=   2.88     *
+*............................................................................*
+*Br  155 :CCQENu_BlobTrackAy : CCQENu_BlobTrackAy[CCQENu_BlobTrackAy_sz]/D   *
+*Entries :   240373 : Total  Size=   21812342 bytes  File Size  =    1838566 *
+*Baskets :      471 : Basket Size=      65535 bytes  Compression=  11.86     *
+*............................................................................*
+*Br  156 :CCQENu_BlobTrackE_sz : CCQENu_BlobTrackE_sz/I                      *
+*Entries :   240373 : Total  Size=    1012858 bytes  File Size  =     347838 *
+*Baskets :      468 : Basket Size=      65535 bytes  Compression=   2.88     *
+*............................................................................*
+*Br  157 :CCQENu_BlobTrackE : CCQENu_BlobTrackE[CCQENu_BlobTrackE_sz]/D      *
+*Entries :   240373 : Total  Size=   21811863 bytes  File Size  =    1824638 *
+*Baskets :      471 : Basket Size=      65535 bytes  Compression=  11.95     *
+*............................................................................*
+*Br  158 :CCQENu_BlobTrackL_sz : CCQENu_BlobTrackL_sz/I                      *
+*Entries :   240373 : Total  Size=    1012858 bytes  File Size  =     347838 *
+*Baskets :      468 : Basket Size=      65535 bytes  Compression=   2.88     *
+*............................................................................*
+*Br  159 :CCQENu_BlobTrackL : CCQENu_BlobTrackL[CCQENu_BlobTrackL_sz]/D      *
+*Entries :   240373 : Total  Size=   21811863 bytes  File Size  =    1824467 *
+*Baskets :      471 : Basket Size=      65535 bytes  Compression=  11.95     *
+*............................................................................*
+*Br  160 :CCQENu_BlobTrackT_sz : CCQENu_BlobTrackT_sz/I                      *
+*Entries :   240373 : Total  Size=    1012858 bytes  File Size  =     347838 *
+*Baskets :      468 : Basket Size=      65535 bytes  Compression=   2.88     *
+*............................................................................*
+*Br  161 :CCQENu_BlobTrackT : CCQENu_BlobTrackT[CCQENu_BlobTrackT_sz]/D      *
+*Entries :   240373 : Total  Size=   21811863 bytes  File Size  =    1817918 *
+*Baskets :      471 : Basket Size=      65535 bytes  Compression=  11.99     *
+*............................................................................*
+*Br  162 :CCQENu_BlobTrackX_sz : CCQENu_BlobTrackX_sz/I                      *
+*Entries :   240373 : Total  Size=    1012858 bytes  File Size  =     347838 *
+*Baskets :      468 : Basket Size=      65535 bytes  Compression=   2.88     *
+*............................................................................*
+*Br  163 :CCQENu_BlobTrackX : CCQENu_BlobTrackX[CCQENu_BlobTrackX_sz]/D      *
+*Entries :   240373 : Total  Size=   21811863 bytes  File Size  =    1838166 *
+*Baskets :      471 : Basket Size=      65535 bytes  Compression=  11.86     *
+*............................................................................*
+*Br  164 :CCQENu_BlobTrackY_sz : CCQENu_BlobTrackY_sz/I                      *
+*Entries :   240373 : Total  Size=    1012858 bytes  File Size  =     347838 *
+*Baskets :      468 : Basket Size=      65535 bytes  Compression=   2.88     *
+*............................................................................*
+*Br  165 :CCQENu_BlobTrackY : CCQENu_BlobTrackY[CCQENu_BlobTrackY_sz]/D      *
+*Entries :   240373 : Total  Size=   21811863 bytes  File Size  =    1838190 *
+*Baskets :      471 : Basket Size=      65535 bytes  Compression=  11.86     *
+*............................................................................*
+*Br  166 :CCQENu_BlobTrackZ_sz : CCQENu_BlobTrackZ_sz/I                      *
+*Entries :   240373 : Total  Size=    1012858 bytes  File Size  =     347838 *
+*Baskets :      468 : Basket Size=      65535 bytes  Compression=   2.88     *
+*............................................................................*
+*Br  167 :CCQENu_BlobTrackZ : CCQENu_BlobTrackZ[CCQENu_BlobTrackZ_sz]/D      *
+*Entries :   240373 : Total  Size=   21811863 bytes  File Size  =    1432601 *
+*Baskets :      471 : Basket Size=      65535 bytes  Compression=  15.22     *
+*............................................................................*
+*Br  168 :CCQENu_BlobVtxDR_sz : CCQENu_BlobVtxDR_sz/I                        *
+*Entries :   240373 : Total  Size=    1012386 bytes  File Size  =     347370 *
+*Baskets :      468 : Basket Size=      65535 bytes  Compression=   2.89     *
+*............................................................................*
+*Br  169 :CCQENu_BlobVtxDR : CCQENu_BlobVtxDR[CCQENu_BlobVtxDR_sz]/D         *
+*Entries :   240373 : Total  Size=   21811384 bytes  File Size  =    9227760 *
+*Baskets :      471 : Basket Size=      65535 bytes  Compression=   2.36     *
+*............................................................................*
+*Br  170 :CCQENu_BlobVtxDTPos_sz : CCQENu_BlobVtxDTPos_sz/I                  *
+*Entries :   240373 : Total  Size=    1013802 bytes  File Size  =      60888 *
+*Baskets :      468 : Basket Size=      65535 bytes  Compression=  16.49     *
+*............................................................................*
+*Br  171 :CCQENu_BlobVtxDTPos : CCQENu_BlobVtxDTPos[CCQENu_BlobVtxDTPos_sz]/D*
+*Entries :   240373 : Total  Size=    1016297 bytes  File Size  =      63195 *
+*Baskets :      468 : Basket Size=      65535 bytes  Compression=  15.93     *
+*............................................................................*
+*Br  172 :CCQENu_BlobVtxDZ_sz : CCQENu_BlobVtxDZ_sz/I                        *
+*Entries :   240373 : Total  Size=    1012386 bytes  File Size  =     347370 *
+*Baskets :      468 : Basket Size=      65535 bytes  Compression=   2.89     *
+*............................................................................*
+*Br  173 :CCQENu_BlobVtxDZ : CCQENu_BlobVtxDZ[CCQENu_BlobVtxDZ_sz]/D         *
+*Entries :   240373 : Total  Size=   21811384 bytes  File Size  =    8002369 *
+*Baskets :      471 : Basket Size=      65535 bytes  Compression=   2.72     *
+*............................................................................*
+*Br  174 :CCQENu_BlobX_sz : CCQENu_BlobX_sz/I                                *
+*Entries :   240373 : Total  Size=    1010498 bytes  File Size  =     345498 *
+*Baskets :      468 : Basket Size=      65535 bytes  Compression=   2.90     *
+*............................................................................*
+*Br  175 :CCQENu_BlobX : CCQENu_BlobX[CCQENu_BlobX_sz]/D                     *
+*Entries :   240373 : Total  Size=   21809468 bytes  File Size  =    6223661 *
+*Baskets :      471 : Basket Size=      65535 bytes  Compression=   3.50     *
+*............................................................................*
+*Br  176 :CCQENu_BlobY_sz : CCQENu_BlobY_sz/I                                *
+*Entries :   240373 : Total  Size=    1010498 bytes  File Size  =     345498 *
+*Baskets :      468 : Basket Size=      65535 bytes  Compression=   2.90     *
+*............................................................................*
+*Br  177 :CCQENu_BlobY : CCQENu_BlobY[CCQENu_BlobY_sz]/D                     *
+*Entries :   240373 : Total  Size=   21809468 bytes  File Size  =    7324544 *
+*Baskets :      471 : Basket Size=      65535 bytes  Compression=   2.98     *
+*............................................................................*
+*Br  178 :CCQENu_BlobZ_sz : CCQENu_BlobZ_sz/I                                *
+*Entries :   240373 : Total  Size=    1010498 bytes  File Size  =     345498 *
+*Baskets :      468 : Basket Size=      65535 bytes  Compression=   2.90     *
+*............................................................................*
+*Br  179 :CCQENu_BlobZ : CCQENu_BlobZ[CCQENu_BlobZ_sz]/D                     *
+*Entries :   240373 : Total  Size=   21809468 bytes  File Size  =    7639526 *
+*Baskets :      471 : Basket Size=      65535 bytes  Compression=   2.85     *
+*............................................................................*
+*Br  180 :CCQENu_BlobZPerCluster_sz : CCQENu_BlobZPerCluster_sz/I            *
+*Entries :   240373 : Total  Size=    1015218 bytes  File Size  =      62292 *
+*Baskets :      468 : Basket Size=      65535 bytes  Compression=  16.14     *
+*............................................................................*
+*Br  181 :CCQENu_BlobZPerCluster :                                           *
+*         | CCQENu_BlobZPerCluster[CCQENu_BlobZPerCluster_sz]/D              *
+*Entries :   240373 : Total  Size=    1017725 bytes  File Size  =      64604 *
+*Baskets :      468 : Basket Size=      65535 bytes  Compression=  15.60     *
+*............................................................................*
+File: /minerva/data/users/dlast/merged_PC_files/NeutronPlusMuon_Target5_6A_Run_126000_n1000_nFiles_468.root has 240373 Events.
