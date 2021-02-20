@@ -19,13 +19,13 @@ if __name__ == "__main__":
 
     filedir = "Run_"+run+"_Target5_"+name+"PlusMuon_PDG_"+pdg+"_Ek_lo_"+str(Ek_lo)+"_Ek_hi_"+str(Ek_hi)
     filebase ="SIM_ExtParticle_"
-    while (not len(glob.glob1("../../fluxes_for_PC/",filedir))):
+    while (not len(glob.glob1("../../fluxesForPC/",filedir))):
         print "CREATING DIRECTORY!"
-        os.system("mkdir ../../fluxes_for_PC/"+filedir)
+        os.system("mkdir ../../fluxesForPC/"+filedir)
 
-    number = len(glob.glob1("../../fluxes_for_PC/"+filedir+"/",filebase+"*.txt"))+1
+    number = len(glob.glob1("../../fluxesForPC/"+filedir+"/",filebase+"*.txt"))+1
     print number
-    outfile = open("../../fluxes_for_PC/"+filedir+"/"+filebase+"{num:04d}.txt".format(num=number),"w")
+    outfile = open("../../fluxesForPC/"+filedir+"/"+filebase+"{num:04d}.txt".format(num=number),"w")
     
     for i in range(n_event):
         E = random.random()*(Ek_hi-Ek_lo)+Ek_lo+m
