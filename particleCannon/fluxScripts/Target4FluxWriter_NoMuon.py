@@ -17,7 +17,7 @@ if __name__ == "__main__":
     pdg = sys.argv[6]
     name = sys.argv[7]
 
-    filedir = "Run_"+run+"_Target5_"+name+"PlusMuon_PDG_"+pdg+"_Ek_lo_"+str(Ek_lo)+"_Ek_hi_"+str(Ek_hi)
+    filedir = "Run_"+run+"_Target4_"+name+"_PDG_"+pdg+"_Ek_lo_"+str(Ek_lo)+"_Ek_hi_"+str(Ek_hi)
     filebase ="SIM_ExtParticle_"
     while (not len(glob.glob1("../fluxesForPC/",filedir))):
         print "CREATING DIRECTORY!"
@@ -37,8 +37,7 @@ if __name__ == "__main__":
         pz = p*math.cos(theta)
         x = random.random()*500.0-250.0
         y = random.random()*500.0-250.0
-        z = random.random()*12.0+5770.0
+        z = random.random()*7.0+5638.0
         outfile.writelines(pdg+" "+str(x)+" "+str(y)+" "+str(z)+" "+str(px)+" "+str(py)+" "+str(pz)+" "+str(E)+"\n")
-        outfile.writelines("-13 "+str(x)+" "+str(y)+" "+str(z)+" 0.0 0.0 3000.0 3001.86009594\n")
         outfile.writelines("\n")
     outfile.close()

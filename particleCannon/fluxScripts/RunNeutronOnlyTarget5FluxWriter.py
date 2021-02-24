@@ -14,4 +14,4 @@ if __name__ == "__main__":
     maxE = sys.argv[3]
 
     for i in range(n_subruns):
-        os.system("python Target4FluxWriter.py 0 "+maxE+" 939.566 "+run+" 1000 2112 Neutron")
+        os.system("python Target5FluxWriter_NoMuon.py 0 "+maxE+" 939.566 "+run+" 1000 2112 Neutron")
