@@ -16,10 +16,10 @@
 
 #./G4_processing CCQENu Fixed_Neutrons Run_126000_Target5_Pi0PlusMuon_PDG_111_Ek_lo_0.0_Ek_hi_5000.0_nFiles_413_07_21_2020 111 > CCQENu_pi0_g4_process_latest.txt &
 
-./G4_processing MAD Fixed_Neutrons Run_126000_Target5_NeutronPlusMuon_PDG_2112_Ek_lo_0.0_Ek_hi_5000.0_nFiles_425_07_21_2020 2112 > MAD_neut_g4_process_latest.txt &
+../interactiveMacros/G4_processing.exe MAD Fixed_Neutrons Run_126000_Target5_NeutronPlusMuon_PDG_2112_Ek_lo_0.0_Ek_hi_5000.0_nFiles_425_07_21_2020 03_01_2021_130PM 2112 > MAD_neut_g4_process_latest.txt &
 
 #./G4_processing MAD Fixed_Neutrons Run_126000_Target5_PiMinusPlusMuon_PDG_-211_Ek_lo_0.0_Ek_hi_5000.0_nFiles_414_07_21_2020 -211 > MAD_pim_g4_process_latest.txt &
 
-#./G4_processing MAD Fixed_Neutrons Run_126000_Target5_PiPlusPlusMuon_PDG_211_Ek_lo_0.0_Ek_hi_5000.0_nFiles_422_07_21_2020 211 > MAD_pip_g4_process_latest.txt &
+../interactiveMacros/G4_processing.exe MAD Fixed_Neutrons Run_126000_Target5_PiPlusPlusMuon_PDG_211_Ek_lo_0.0_Ek_hi_5000.0_nFiles_422_07_21_2020 03_01_2021_130PM 211 > MAD_pip_g4_process_latest.txt &
 
 #./G4_processing MAD Fixed_Neutrons Run_126000_Target5_Pi0PlusMuon_PDG_111_Ek_lo_0.0_Ek_hi_5000.0_nFiles_414_07_21_2020 111 > MAD_pi0_g4_process_latest.txt &

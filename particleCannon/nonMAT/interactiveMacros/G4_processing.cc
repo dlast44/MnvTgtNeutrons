@@ -48,10 +48,11 @@ int main(int argc, char* argv[]) {
   TString tool;
   TString top_dir;
   TString name;
+  TString tag;
   int pdg_in;
 
-  if (argc < 4 || argc > 5){
-    cout << "Usage: particle_history <tool_name> <top_dir> <file_name> <pdg_in, default 0>" << endl;
+  if (argc < 5 || argc > 6){
+    cout << "Usage: particle_history <tool_name> <top_dir> <file_name> <file_tag> <pdg_in, default 0>" << endl;
     cout << "<tool_name> is CCQENu or MAD" << endl;
     return 1;
   }
@@ -59,13 +60,15 @@ int main(int argc, char* argv[]) {
     tool = argv[1];
     top_dir = argv[2];
     name = argv[3];
+    tag = argv[4];
     pdg_in = 0;
   }
   else{
     tool = argv[1];
     top_dir = argv[2];
     name = argv[3];
-    pdg_in = atoi(argv[4]);
+    tag = argv[4];
+    pdg_in = atoi(argv[5]);
   }
 
   TString tree_name = "";
@@ -79,8 +82,8 @@ int main(int argc, char* argv[]) {
   TFile* input_file = new TFile("/minerva/data/users/dlast/merged_PC_files/"+top_dir+"/"+tool+"/"+name+".root","READ");
   TTree* input_tree = (TTree*)input_file->Get(tree_name);
 
-  //TFile* output_file = new TFile("/minerva/data/users/dlast/Moved_from_app/particle_cannon/hists/"+top_dir+"/"+tool+"/"+name+"_g4_plots.root","RECREATE");
-  TFile* output_file = new TFile("/minerva/data/users/dlast/Moved_from_app/particle_cannon/hists/"+top_dir+"/"+tool+"/"+name+"_g4_plots_small_sample_SL6.root","RECREATE");
+  TFile* output_file = new TFile("/minerva/data/users/dlast/Moved_from_app/particle_cannon/hists/"+top_dir+"/"+tool+"/"+name+"_g4_plots_"+tag+".root","RECREATE");
+  //TFile* output_file = new TFile("/minerva/data/users/dlast/Moved_from_app/particle_cannon/hists/"+top_dir+"/"+tool+"/"+name+"_g4_plots_small_sample_SL6.root","RECREATE");
   //TFile* output_file = new TFile("/minerva/data/users/dlast/Moved_from_app/particle_cannon/hists/"+top_dir+"/"+tool+"/"+name+"_g4_plots_KinE_cutoff_500MeV.root","RECREATE");
 
   output_file->cd();
@@ -250,8 +253,17 @@ int main(int argc, char* argv[]) {
   //TH1D* h_prot_mom_DS;
   //Any others?
 
-  //TH2D* neutron_KinE_made_blob_v_BlobE;
-  //TH2D* neutron_KinE_made_blob_v_BlobE;
+
+  //Plots I'm adding as of 03/01/2021
+  TH2D* h_prim_KinE_v_prot_z_dist_to_vtx_US = new TH2D("h_prim_KinE_v_prot_z_dist_to_vtx_US","Primary Particle kin. E vs. blob-producing proton Z dist. to vtx. (Target);Z Dist. [mm];Kinetic Energy [MeV]",110,-1000,100,50,0,5000);
+  TH2D* h_prim_KinE_v_prot_z_dist_to_vtx_DS = new TH2D("h_prim_KinE_v_prot_z_dist_to_vtx_DS","Primary Particle kin. E vs. blob-producing proton Z dist. to vtx. (Tracker);Z Dist. [mm];Kinetic Energy [MeV]",110,-100,1000,50,0,5000);
+
+  TH2D* h_prim_KinE_v_prot_mom_US = new TH2D("h_prim_KinE_v_prot_mom_US","Primary Particle kin. E vs. blob-producing proton momentum (Target);Proton p [MeV];Kinetic Energy [MeV]",50,0,5000,50,0,5000);
+  TH2D* h_prim_KinE_v_prot_mom_DS = new TH2D("h_prim_KinE_v_prot_mom_DS","Primary Particle kin. E vs. blob-producing proton momentum (Tracker);Proton p [MeV];Kinetic Energy [MeV]",50,0,5000,50,0,5000);
+
+  TH2D* h_prim_KinE_v_nprot_blobs = new TH2D("h_prim_KinE_v_nprot_blobs","Primary Particle kin. E vs. No. of blobs produced by protons;No.;Kinetic Energy [MeV]",10,0,10,50,0,5000);
+
+  TH2D* h_prim_KinE_v_nblobs = new TH2D("h_prim_KinE_v_nblobs","Primary Particle kin. E vs. No. of blobs;No.;Kinetic Energy [MeV]",25,0,25,50,0,5000);
 
   double vtx[4];
   double mc_vtx[4];
@@ -329,7 +341,7 @@ int main(int argc, char* argv[]) {
   vector<double> frac_vals;
   double total_Etrue;
 
-  for (int i=0; i < /*input_tree->GetEntries()*/1000; ++i){
+  for (int i=0; i < input_tree->GetEntries(); ++i){
     g4_tracks.clear();
     cout << "Event: " << i << endl;
     input_tree->GetEvent(i);
@@ -352,13 +364,15 @@ int main(int argc, char* argv[]) {
 
     G4_info g4_blob_part;
     int primary_blobs = 0;
-    //int neutron_blobs = 0;
+    int proton_blobs = 0;
 
     //if (!pdg_in) cout << "No requirement for the particle identity of track ID 1." << endl;
     if (g4_prim_part.PDG != pdg_in){
       cout << "ISSUE WITH G4 Info (primary non-muon particle is not track with ID 1)" << endl;
       continue;
     }
+
+    h_prim_KinE_v_nblobs->Fill(nBlobs,g4_prim_part.KinE);
     
     for (int j=0; j < nBlobs; ++j){
       frac_vals = {Blob_EFrac_neut[j],Blob_EFrac_prot[j],Blob_EFrac_pi0[j],Blob_EFrac_pip[j],Blob_EFrac_pim[j],Blob_EFrac_photo[j],Blob_EFrac_el[j],Blob_EFrac_mu[j],Blob_EFrac_other[j],Blob_EFrac_non[j]};
@@ -389,6 +403,7 @@ int main(int argc, char* argv[]) {
 
       if(g4_blob_part.PDG == 2212 && distance(frac_vals.begin(),max_el) == 1){
 	//cout << "PROTON IN BOTH TRACK AND MAX DEPOSIT" << endl;
+	++proton_blobs;
 	G4_info prot_parent = g4_tracks[g4_blob_part.ParentID];
 	TVector3 p_prot(g4_blob_part.Px,g4_blob_part.Py,g4_blob_part.Pz);
 	TVector3 p_prot_parent(prot_parent.Px,prot_parent.Py,prot_parent.Pz);
@@ -402,6 +417,8 @@ int main(int argc, char* argv[]) {
 	  h_prot_z_dist_to_vtx_v_parentID_US->Fill(PDGbins[prot_parent.PDG],vtx_to_prot.Z());
 	  h_prot_mom_v_BlobE_US->Fill(Blob_total_E[j],p_prot.Mag());
 	  h_prot_dist_to_vtx_v_prot_angle_to_vtx_US->Fill(p_prot.Angle(vtx_to_prot),vtx_to_prot.Mag());
+	  h_prim_KinE_v_prot_z_dist_to_vtx_US->Fill(vtx_to_prot.Z(),g4_prim_part.KinE);
+	  h_prim_KinE_v_prot_mom_US->Fill(p_prot.Mag(),g4_prim_part.KinE);
 	}
 	else{
 	  h_prim_end_Z_to_prim_v_parentID_DS->Fill(PDGbins[prot_parent.PDG],g4_prim_part.FinZ);
@@ -412,6 +429,8 @@ int main(int argc, char* argv[]) {
 	  h_prot_z_dist_to_vtx_v_parentID_DS->Fill(PDGbins[prot_parent.PDG],vtx_to_prot.Z());
 	  h_prot_mom_v_BlobE_DS->Fill(Blob_total_E[j],p_prot.Mag());
 	  h_prot_dist_to_vtx_v_prot_angle_to_vtx_DS->Fill(p_prot.Angle(vtx_to_prot),vtx_to_prot.Mag());
+	  h_prim_KinE_v_prot_z_dist_to_vtx_DS->Fill(vtx_to_prot.Z(),g4_prim_part.KinE);
+	  h_prim_KinE_v_prot_mom_DS->Fill(p_prot.Mag(),g4_prim_part.KinE);
 	}
       }
 
@@ -445,6 +464,7 @@ int main(int argc, char* argv[]) {
     cout << "Number of primary particle blobs that had neutrons at some point: "<< neutron_blobs  << endl;
     */
     }
+    h_prim_KinE_v_nprot_blobs->Fill(proton_blobs,g4_prim_part.KinE);
   }
 
   output_file->Write();
