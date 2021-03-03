@@ -88,6 +88,8 @@ int main(int argc, char* argv[]) {
 
   output_file->cd();
 
+  //Additional non-proton specific plots//
+
   //////////////////////////////////////PLOTS TO MAKE
   TH2D*  h_prim_end_Z_to_prim_v_parentID_US = new TH2D("h_prim_end_Z_to_prim_v_parentID_US","Angle between blob-producing proton momentum and the primary non-muon particle which led to it vs. its parent  particle type (Target);;Primary Final Z [mm]",10,0,10,1000,4000,8000);
   h_prim_end_Z_to_prim_v_parentID_US->GetXaxis()->SetBinLabel(3,"n");
@@ -241,6 +243,7 @@ int main(int argc, char* argv[]) {
   PDGbins[13] = 9;
   PDGbins[-13] = 9;
 
+
   //  TH1D* h_prot_dist_to_vtx_US;
   //TH1D* h_prot_dist_to_vtx_DS;
   //TH1D* h_prot_z_dist_to_vtx_US;
@@ -254,7 +257,7 @@ int main(int argc, char* argv[]) {
   //Any others?
 
 
-  //Plots I'm adding as of 03/01/2021
+  //Plots I'm adding starting on 03/01/2021
   TH2D* h_prim_KinE_v_prot_z_dist_to_vtx_US = new TH2D("h_prim_KinE_v_prot_z_dist_to_vtx_US","Primary Particle kin. E vs. blob-producing proton Z dist. to vtx. (Target);Z Dist. [mm];Kinetic Energy [MeV]",110,-1000,100,50,0,5000);
   TH2D* h_prim_KinE_v_prot_z_dist_to_vtx_DS = new TH2D("h_prim_KinE_v_prot_z_dist_to_vtx_DS","Primary Particle kin. E vs. blob-producing proton Z dist. to vtx. (Tracker);Z Dist. [mm];Kinetic Energy [MeV]",110,-100,1000,50,0,5000);
 
@@ -263,16 +266,28 @@ int main(int argc, char* argv[]) {
 
   TH2D* h_prim_KinE_v_nprot_blobs = new TH2D("h_prim_KinE_v_nprot_blobs","Primary Particle kin. E vs. No. of blobs produced by protons;No.;Kinetic Energy [MeV]",10,0,10,50,0,5000);
 
+  TH2D* h_prim_KinE_v_multiplicity = new TH2D("h_prim_KinE_v_multiplicity","Primary Particle Kin. E vs. No. Tracks at vertex;No.;Kinetic Energy [MeV]",10,0,10,50,0,5000);
+  TH2D* h_prim_KinE_v_nBlobTracks = new TH2D("h_prim_KinE_v_nBlobTracks","Primary Particle Kin. E vs. No. Blobs with a fit Track;No.;Kinetic Energy [MeV]",10,0,10,50,0,5000);
+  TH2D* h_prim_KinE_v_nBlobIncTracks = new TH2D("h_prim_KinE_v_nBlobIncTracks","Primary Particle Kin. E vs. No. Tracks fit across all blob clusters;No.;Kinetic Energy [MeV]",10,0,10,50,0,5000);
+
   TH2D* h_prim_KinE_v_nblobs = new TH2D("h_prim_KinE_v_nblobs","Primary Particle kin. E vs. No. of blobs;No.;Kinetic Energy [MeV]",25,0,25,50,0,5000);
+
+  TH2D* h_prim_KinE_v_multiplicity_w_prot = new TH2D("h_prim_KinE_v_multiplicity_w_prot","Primary Particle Kin. E vs. No. Tracks at vertex (Evt. has prot. blob);No.;Kinetic Energy [MeV]",10,0,10,50,0,5000);
+  TH2D* h_prim_KinE_v_nBlobTracks_w_prot = new TH2D("h_prim_KinE_v_nBlobTracks_w_prot","Primary Particle Kin. E vs. No. Blobs with a fit Track (Evt. has prot. blob);No.;Kinetic Energy [MeV]",10,0,10,50,0,5000);
+  TH2D* h_prim_KinE_v_nBlobIncTracks_w_prot = new TH2D("h_prim_KinE_v_nBlobIncTracks_w_prot","Primary Particle Kin. E vs. No. Tracks fit across all blob clusters (Evt. has prot. blob);No.;Kinetic Energy [MeV]",10,0,10,50,0,5000);
+
+  TH2D* h_prim_KinE_v_nblobs_w_prot = new TH2D("h_prim_KinE_v_nblobs_w_prot","Primary Particle kin. E vs. No. of blobs (Evt. has prot. blob);No.;Kinetic Energy [MeV]",25,0,25,50,0,5000);
 
   double vtx[4];
   double mc_vtx[4];
+  int nTracks;
 
   input_tree->SetBranchAddress(tree_name+"_vtx",&vtx);
   input_tree->SetBranchAddress("mc_vtx",&mc_vtx);
+  input_tree->SetBranchAddress("multiplicity",&nTracks);
 
   //G4 Variables
-  int g4_max=6750;
+  int g4_max=6750; //Might not work for neutrino MC, be careful.
   int g4_size;
   int g4_pdg[g4_max];
   int g4_ID[g4_max];
@@ -307,6 +322,8 @@ int main(int argc, char* argv[]) {
 
   //Blob Variables
   int nBlobs;
+  int nBlobTracks;
+  int nBlobIncTracks;
   int Blob_g4_ID[150];
   int Blob_g4_TopMCPID[150];
   double Blob_total_E[150];
@@ -324,6 +341,8 @@ int main(int argc, char* argv[]) {
 
   input_tree->SetBranchAddress(tree_name+"_BlobMCTrackID_sz",&nBlobs);
   input_tree->SetBranchAddress(tree_name+"_BlobMCTrackID",&Blob_g4_ID);
+  input_tree->SetBranchAddress(tree_name+"_EvtHasNBlobTracks",&nBlobTracks);
+  input_tree->SetBranchAddress(tree_name+"_EvtHasNBlobIncTracks",&nBlobIncTracks);
   input_tree->SetBranchAddress(tree_name+"_BlobTopMCPID",&Blob_g4_TopMCPID);
   input_tree->SetBranchAddress(tree_name+"_BlobTotalE",&Blob_total_E);
   input_tree->SetBranchAddress(tree_name+"_MCEnergyFrac_Neutron",&Blob_EFrac_neut);
@@ -337,7 +356,7 @@ int main(int argc, char* argv[]) {
   input_tree->SetBranchAddress(tree_name+"_MCEnergyFrac_Others",&Blob_EFrac_other);
   input_tree->SetBranchAddress(tree_name+"_MCEnergyFrac_NonParticle",&Blob_EFrac_non);
   input_tree->SetBranchAddress(tree_name+"_Blob2DVtxDZ",&Blob_VtxDZ);
-  
+
   vector<double> frac_vals;
   double total_Etrue;
 
@@ -346,7 +365,7 @@ int main(int argc, char* argv[]) {
     cout << "Event: " << i << endl;
     input_tree->GetEvent(i);
     if (g4_size > g4_max || g4_size <= 0){
-      cout << "UH OH. If the following number is 0, there is no G4 info for this event for some reason. Maybe CCQENu some funny pre-G4 cut. Skipping Event." << endl;
+      cout << "UH OH. If the following number is 0, there is no (or too much) G4 info for this event for some reason. Maybe CCQENu some funny pre-G4 cut. Skipping Event." << endl;
       cout << g4_size << endl;
       cout << "" << endl;
       continue;
@@ -373,6 +392,9 @@ int main(int argc, char* argv[]) {
     }
 
     h_prim_KinE_v_nblobs->Fill(nBlobs,g4_prim_part.KinE);
+    h_prim_KinE_v_multiplicity->Fill(nTracks,g4_prim_part.KinE);
+    h_prim_KinE_v_nBlobTracks->Fill(nBlobTracks,g4_prim_part.KinE);
+    h_prim_KinE_v_nBlobIncTracks->Fill(nBlobIncTracks,g4_prim_part.KinE);
     
     for (int j=0; j < nBlobs; ++j){
       frac_vals = {Blob_EFrac_neut[j],Blob_EFrac_prot[j],Blob_EFrac_pi0[j],Blob_EFrac_pip[j],Blob_EFrac_pim[j],Blob_EFrac_photo[j],Blob_EFrac_el[j],Blob_EFrac_mu[j],Blob_EFrac_other[j],Blob_EFrac_non[j]};
@@ -465,7 +487,25 @@ int main(int argc, char* argv[]) {
     */
     }
     h_prim_KinE_v_nprot_blobs->Fill(proton_blobs,g4_prim_part.KinE);
+    if (proton_blobs > 0){
+      h_prim_KinE_v_nblobs_w_prot->Fill(nBlobs,g4_prim_part.KinE);
+      h_prim_KinE_v_multiplicity_w_prot->Fill(nTracks,g4_prim_part.KinE);
+      h_prim_KinE_v_nBlobTracks_w_prot->Fill(nBlobTracks,g4_prim_part.KinE);
+      h_prim_KinE_v_nBlobIncTracks_w_prot->Fill(nBlobIncTracks,g4_prim_part.KinE);
+    }
   }
+  
+  TH2D* h_prim_KinE_v_nblobs_wo_prot = new TH2D(*h_prim_KinE_v_nblobs);
+  h_prim_KinE_v_nblobs_wo_prot->Add(h_prim_KinE_v_nblobs_w_prot,-1.0);
+
+  TH2D* h_prim_KinE_v_multiplicity_wo_prot = new TH2D(*h_prim_KinE_v_multiplicity);
+  h_prim_KinE_v_multiplicity_wo_prot->Add(h_prim_KinE_v_multiplicity_w_prot,-1.0);
+
+  TH2D* h_prim_KinE_v_nBlobTracks_wo_prot = new TH2D(*h_prim_KinE_v_nBlobTracks);
+  h_prim_KinE_v_nBlobTracks_wo_prot->Add(h_prim_KinE_v_nBlobTracks_w_prot,-1.0);
+
+  TH2D* h_prim_KinE_v_nBlobIncTracks_wo_prot = new TH2D(*h_prim_KinE_v_nBlobIncTracks);
+  h_prim_KinE_v_nBlobIncTracks_wo_prot->Add(h_prim_KinE_v_nBlobIncTracks_w_prot,-1.0);
 
   output_file->Write();
   input_file->Close();

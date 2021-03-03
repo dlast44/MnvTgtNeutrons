@@ -34,23 +34,26 @@ int main(int argc, char* argv[]) {
   }
 
   TString name_root = argv[1];
-  vector<TString> names = {"h_prot_angle_to_prim_v_parentID_US","h_prot_angle_to_prim_v_parentID_DS","h_prot_angle_to_vtx_line_v_parentID_US","h_prot_angle_to_vtx_line_v_parentID_DS","h_prot_angle_to_parent_v_parentID_US","h_prot_angle_to_parent_v_parentID_DS","h_prot_dist_to_vtx_v_parentID_US","h_prot_dist_to_vtx_v_parentID_DS","h_prot_z_dist_to_vtx_v_parentID_US","h_prot_z_dist_to_vtx_v_parentID_DS","h_prot_dist_to_vtx_v_prot_angle_to_vtx_US","h_prot_dist_to_vtx_v_prot_angle_to_vtx_DS"};
+  name_root.ReplaceAll(".root","");
+  //vector<TString> names = {"h_prot_angle_to_prim_v_parentID_US","h_prot_angle_to_prim_v_parentID_DS","h_prot_angle_to_vtx_line_v_parentID_US","h_prot_angle_to_vtx_line_v_parentID_DS","h_prot_angle_to_parent_v_parentID_US","h_prot_angle_to_parent_v_parentID_DS","h_prot_dist_to_vtx_v_parentID_US","h_prot_dist_to_vtx_v_parentID_DS","h_prot_z_dist_to_vtx_v_parentID_US","h_prot_z_dist_to_vtx_v_parentID_DS","h_prot_dist_to_vtx_v_prot_angle_to_vtx_US","h_prot_dist_to_vtx_v_prot_angle_to_vtx_DS"};
+
+  vector<TString> names = {"h_prim_KinE_v_prot_z_dist_to_vtx_US","h_prim_KinE_v_prot_z_dist_to_vtx_DS","h_prim_KinE_v_prot_mom_US","h_prim_KinE_v_prot_mom_DS","h_prim_KinE_v_nprot_blobs","h_prim_KinE_v_nblobs"};
 
   //Currently leaving off h_prot_mom_v_BlobE_US/DS since they need some work.
 
   TH2D* hist2D;
   //TH1D* hist1D;
 
-  TFile* input_file = new TFile("../hists/"+name_root+"_g4_plots.root","READ");
-
+  TFile* input_file = new TFile(name_root+".root","READ");
+  name_root.ReplaceAll("hists","plots");
   gStyle->SetOptStat(0);
 
   TCanvas* c1 = new TCanvas("c1","c1",1600,1200);
   for (auto name:names){
     hist2D = (TH2D*)input_file->Get(name);
     hist2D->Draw("colz");
-    c1->Print("../plots/"+name_root+"_"+name+".jpg");
-    c1->Print("../plots/"+name_root+"_"+name+".pdf");
+    c1->Print(name_root+"_"+name+".jpg");
+    c1->Print(name_root+"_"+name+".pdf");
     c1->Clear();
   }
 
