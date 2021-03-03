@@ -37,7 +37,7 @@ int main(int argc, char* argv[]) {
   name_root.ReplaceAll(".root","");
   //vector<TString> names = {"h_prot_angle_to_prim_v_parentID_US","h_prot_angle_to_prim_v_parentID_DS","h_prot_angle_to_vtx_line_v_parentID_US","h_prot_angle_to_vtx_line_v_parentID_DS","h_prot_angle_to_parent_v_parentID_US","h_prot_angle_to_parent_v_parentID_DS","h_prot_dist_to_vtx_v_parentID_US","h_prot_dist_to_vtx_v_parentID_DS","h_prot_z_dist_to_vtx_v_parentID_US","h_prot_z_dist_to_vtx_v_parentID_DS","h_prot_dist_to_vtx_v_prot_angle_to_vtx_US","h_prot_dist_to_vtx_v_prot_angle_to_vtx_DS"};
 
-  vector<TString> names = {"h_prim_KinE_v_prot_z_dist_to_vtx_US","h_prim_KinE_v_prot_z_dist_to_vtx_DS","h_prim_KinE_v_prot_mom_US","h_prim_KinE_v_prot_mom_DS","h_prim_KinE_v_nprot_blobs","h_prim_KinE_v_nblobs"};
+  vector<TString> names = {"h_prim_KinE_v_prot_z_dist_to_vtx_US","h_prim_KinE_v_prot_z_dist_to_vtx_DS","h_prim_KinE_v_prot_mom_US","h_prim_KinE_v_prot_mom_DS","h_prim_KinE_v_nprot_blobs","h_prim_KinE_v_nblobs","h_prim_KinE_v_multiplicity","h_prim_KinE_v_nBlobTracks","h_prim_KinE_v_nBlobIncTracks","h_prim_KinE_v_nblobs_w_prot","h_prim_KinE_v_multiplicity_w_prot","h_prim_KinE_v_nBlobTracks_w_prot","h_prim_KinE_v_nBlobIncTracks_w_prot"};
 
   //Currently leaving off h_prot_mom_v_BlobE_US/DS since they need some work.
 
