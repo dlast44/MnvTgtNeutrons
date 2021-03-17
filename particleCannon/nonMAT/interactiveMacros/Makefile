@@ -7,8 +7,8 @@ all : $(patsubst %.cc, %.o, $(wildcard *.cc))
 
 # rule for each one
 %.o : %.cc
-	$(CXX) $(INCLUDE) $(CXXFLAGS) $(ROOTFLAGS) -o $*.o -c $*.cc #compile
-	$(CXX) $(INCLUDE) $(CXXFLAGS) $(ROOTFLAGS) -o $*.exe $*.o        #link
+	$(CXX) $(INCLUDE) $(CXXFLAGS) -o $*.o -c $*.cc $(ROOTFLAGS) #compile
+	$(CXX) $(INCLUDE) $(CXXFLAGS) -o $*.exe $*.o $(ROOTFLAGS)      #link
 
 clean:
 	rm -f $(wildcard *.o) $(patsubst %.cc, %.exe, $(wildcard *.cc))
