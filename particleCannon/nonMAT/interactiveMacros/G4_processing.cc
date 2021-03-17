@@ -278,6 +278,8 @@ int main(int argc, char* argv[]) {
 
   TH2D* h_prim_KinE_v_nblobs_w_prot = new TH2D("h_prim_KinE_v_nblobs_w_prot","Primary Particle kin. E vs. No. of blobs (Evt. has prot. blob);No.;Kinetic Energy [MeV]",25,0,25,50,0,5000);
 
+  TH1D* h_prim_KinE = new TH1D("h_prim_KinE","Primary Particle Kin. E;Kinetic Energy [MeV];Events",100,0,5000);
+
   double vtx[4];
   double mc_vtx[4];
   int nTracks;
@@ -391,6 +393,7 @@ int main(int argc, char* argv[]) {
       continue;
     }
 
+    h_prim_KinE->Fill(g4_prim_part.KinE);
     h_prim_KinE_v_nblobs->Fill(nBlobs,g4_prim_part.KinE);
     h_prim_KinE_v_multiplicity->Fill(nTracks,g4_prim_part.KinE);
     h_prim_KinE_v_nBlobTracks->Fill(nBlobTracks,g4_prim_part.KinE);
@@ -494,17 +497,18 @@ int main(int argc, char* argv[]) {
       h_prim_KinE_v_nBlobIncTracks_w_prot->Fill(nBlobIncTracks,g4_prim_part.KinE);
     }
   }
-  
-  TH2D* h_prim_KinE_v_nblobs_wo_prot = new TH2D(*h_prim_KinE_v_nblobs);
+
+
+  TH2D* h_prim_KinE_v_nblobs_wo_prot = (TH2D*)h_prim_KinE_v_nblobs->Clone("h_prim_KinE_v_nblobs_wo_prot");
   h_prim_KinE_v_nblobs_wo_prot->Add(h_prim_KinE_v_nblobs_w_prot,-1.0);
 
-  TH2D* h_prim_KinE_v_multiplicity_wo_prot = new TH2D(*h_prim_KinE_v_multiplicity);
+  TH2D* h_prim_KinE_v_multiplicity_wo_prot = (TH2D*)h_prim_KinE_v_multiplicity->Clone("h_prim_KinE_v_multiplicity_wo_prot");
   h_prim_KinE_v_multiplicity_wo_prot->Add(h_prim_KinE_v_multiplicity_w_prot,-1.0);
 
-  TH2D* h_prim_KinE_v_nBlobTracks_wo_prot = new TH2D(*h_prim_KinE_v_nBlobTracks);
+  TH2D* h_prim_KinE_v_nBlobTracks_wo_prot = (TH2D*)h_prim_KinE_v_nBlobTracks->Clone("h_prim_KinE_v_nBlobTracks_wo_prot");
   h_prim_KinE_v_nBlobTracks_wo_prot->Add(h_prim_KinE_v_nBlobTracks_w_prot,-1.0);
 
-  TH2D* h_prim_KinE_v_nBlobIncTracks_wo_prot = new TH2D(*h_prim_KinE_v_nBlobIncTracks);
+  TH2D* h_prim_KinE_v_nBlobIncTracks_wo_prot = (TH2D*)h_prim_KinE_v_nBlobIncTracks->Clone("h_prim_KinE_v_nBlobIncTracks_wo_prot");
   h_prim_KinE_v_nBlobIncTracks_wo_prot->Add(h_prim_KinE_v_nBlobIncTracks_w_prot,-1.0);
 
   output_file->Write();
