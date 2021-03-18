@@ -46,23 +46,33 @@ struct G4_info{
 };
 
 int main(int argc, char* argv[]) {
+  TString location;
   TString tool;
   TString top_dir;
   TString name;
   TString tag;
   int pdg_in;
 
-  if (argc < 5 || argc > 6){
-    cout << "Usage: particle_history <tool_name> <top_dir> <file_name> <file_tag> <pdg_in, default 0>" << endl;
+  if (argc < 5 || argc > 7){
+    cout << "Usage: particle_history <tool_name> <top_dir> <file_name> <file_tag> <pdg_in, default 0> <location>" << endl;
     cout << "<tool_name> is CCQENu or MAD" << endl;
     return 1;
   }
-  else if (argc == 4){
+  else if (argc == 5){
     tool = argv[1];
     top_dir = argv[2];
     name = argv[3];
     tag = argv[4];
     pdg_in = 0;
+    location = "minerva";
+  }
+  else if (argc == 6){
+    tool = argv[1];
+    top_dir = argv[2];
+    name = argv[3];
+    tag = argv[4];
+    pdg_in = atoi(argv[5]);
+    location = "minerva";
   }
   else{
     tool = argv[1];
@@ -70,6 +80,7 @@ int main(int argc, char* argv[]) {
     name = argv[3];
     tag = argv[4];
     pdg_in = atoi(argv[5]);
+    location = argv[6];
   }
 
   TString tree_name = "";
@@ -80,10 +91,21 @@ int main(int argc, char* argv[]) {
     return 2;
   }
 
-  TFile* input_file = new TFile("/minerva/data/users/dlast/merged_PC_files/"+top_dir+"/"+tool+"/"+name+".root","READ");
+  bool isMin = true;
+  if (location == "personal") isMin = false;
+  else if (location != "minerva"){
+    cout << "No location other than Minerva GPVMS or personal machine currently supported in this script." << endl;
+    return 3;
+  }
+
+  TFile* input_file;
+  if (!isMin) input_file = new TFile("/mnt/Windows/Users/lastd/SWforPhysResearch/Minerva_Tuples/merged_PC_files/"+name+".root","READ");
+  else input_file = new TFile("/minerva/data/users/dlast/merged_PC_files/"+top_dir+"/"+tool+"/"+name+".root","READ");
   TTree* input_tree = (TTree*)input_file->Get(tree_name);
 
-  TFile* output_file = new TFile("/minerva/data/users/dlast/Moved_from_app/particle_cannon/hists/"+top_dir+"/"+tool+"/"+name+"_g4_plots_"+tag+".root","RECREATE");
+  TFile* output_file;
+  if (!isMin) output_file = new TFile("../../../../particleCannon/hists/"+name+"_g4_plots_"+tag+".root","RECREATE");
+  else output_file = new TFile("/minerva/data/users/dlast/Moved_from_app/particle_cannon/hists/"+top_dir+"/"+tool+"/"+name+"_g4_plots_"+tag+".root","RECREATE");
   //TFile* output_file = new TFile("/minerva/data/users/dlast/Moved_from_app/particle_cannon/hists/"+top_dir+"/"+tool+"/"+name+"_g4_plots_small_sample_SL6.root","RECREATE");
   //TFile* output_file = new TFile("/minerva/data/users/dlast/Moved_from_app/particle_cannon/hists/"+top_dir+"/"+tool+"/"+name+"_g4_plots_KinE_cutoff_500MeV.root","RECREATE");
 
@@ -281,6 +303,10 @@ int main(int argc, char* argv[]) {
 
   TH1D* h_prim_KinE = new TH1D("h_prim_KinE","Primary Particle Kin. E;Kinetic Energy [MeV];Events",100,0,5000);
 
+  //Plots I'm adding on 03/18/2021... Might want to break this code apart or at least organize it better... These are in as quick a response as possible to the suggestions by Christopher on 03/17/2021...
+  TH2D* h_prim_KinE_v_n_nonprot_blobs = new TH2D("h_prim_KinE_v_n_nonprot_blobs","Primary Particle kin. E vs. No. of non-prot blobs;No.;Kinetic Energy [MeV]",25,0,25,50,0,5000);
+  //TH2D* h_prim_KinE_v_blob_in_first_plane = TH2D("h_prim_KinE_v_blob_in_first_plane","Primary Particle kin. E vs. Bool of blob in first plane.;Blob In First  Plane?;Kinetic Energy [MeV]",2,0,2,50,0,5000);
+  
   double vtx[4];
   double mc_vtx[4];
   int nTracks;
@@ -491,6 +517,7 @@ int main(int argc, char* argv[]) {
     */
     }
     h_prim_KinE_v_nprot_blobs->Fill(proton_blobs,g4_prim_part.KinE);
+    h_prim_KinE_v_n_nonprot_blobs->Fill(nBlobs-proton_blobs,g4_prim_part.KinE);
     if (proton_blobs > 0){
       h_prim_KinE_v_nblobs_w_prot->Fill(nBlobs,g4_prim_part.KinE);
       h_prim_KinE_v_multiplicity_w_prot->Fill(nTracks,g4_prim_part.KinE);
