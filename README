@@ -3,4 +3,6 @@ This repository (created 02/18/2021) serves to hold the work that I have done si
 Master branch will be reserved for code that will be needed to reproduce results at key points (e.g. collaboration meetings)
 Develop branch will be for all work as it progresses
 
+This has worked (with slight MakeFile mods on both the GPVMs, and my personal Ubuntu 20.04 machine)...
+
 Stay tuned for more information.
