@@ -483,7 +483,6 @@ int main(int argc, char* argv[]) {
     if (g4_prim_part.PDG != pdg_in){
       cout << "PDG didn't match input... just a warning..." << endl;  
     }
-
     
     for (int j=0; j < nBlobs; ++j){
       //Current Blob-level "Cuts" And their bit number/object defintion
