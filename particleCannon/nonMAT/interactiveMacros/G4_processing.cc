@@ -104,7 +104,7 @@ int main(int argc, char* argv[]) {
   TTree* input_tree = (TTree*)input_file->Get(tree_name);
 
   TFile* output_file;
-  if (!isMin) output_file = new TFile("../../../../particleCannon/hists/"+name+"_g4_plots_"+tag+".root","RECREATE");
+  if (!isMin) output_file = new TFile("../../../../particleCannonAnalyzed/hists/"+name+"_g4_plots_"+tag+".root","RECREATE");
   else output_file = new TFile("/minerva/data/users/dlast/Moved_from_app/particle_cannon/hists/"+top_dir+"/"+tool+"/"+name+"_g4_plots_"+tag+".root","RECREATE");
   //TFile* output_file = new TFile("/minerva/data/users/dlast/Moved_from_app/particle_cannon/hists/"+top_dir+"/"+tool+"/"+name+"_g4_plots_small_sample_SL6.root","RECREATE");
   //TFile* output_file = new TFile("/minerva/data/users/dlast/Moved_from_app/particle_cannon/hists/"+top_dir+"/"+tool+"/"+name+"_g4_plots_KinE_cutoff_500MeV.root","RECREATE");

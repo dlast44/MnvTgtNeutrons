@@ -109,7 +109,7 @@ int main(int argc, char* argv[]) {
   TTree* input_tree = (TTree*)input_file->Get(tree_name);
 
   TFile* output_file;
-  if (!isMin) output_file = new TFile("../../../../particleCannon/hists/"+name+"_cuts_plots_"+tag+".root","RECREATE");
+  if (!isMin) output_file = new TFile("../../../../particleCannonAnalyzed/hists/"+name+"_cuts_plots_"+tag+".root","RECREATE");
   else output_file = new TFile("/minerva/data/users/dlast/Moved_from_app/particle_cannon/hists/"+top_dir+"/"+tool+"/"+name+"_cuts_plots_"+tag+".root","RECREATE");
 
   output_file->cd();
