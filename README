@@ -1,3 +1,9 @@
+UPDATE:
+
+This project was not designed as well with a build structure in mind. New project created to bear that in mind. This should be thought to contain solely nonMAT framework scripts... but the flux scripts it generates for the particleCannon MC are useful. Going to merge to master once cleaned up a bit.
+
+OUTDATED INFO:
+
 This repository (created 02/18/2021) serves to hold the work that I have done since ~March 2020 with the detection of neutrons produced in the passive nuclear targets in the MINERvA experiment.
 
 Master branch will be reserved for code that will be needed to reproduce results at key points (e.g. collaboration meetings)
